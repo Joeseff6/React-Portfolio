@@ -1,61 +1,70 @@
 import React from 'react';
-import Home from '../pages/Home';
-import Portfolio from '../pages/Portfolio';
-import Contact from '../pages/Contact';
-import Projects from '../pages/Projects';
-import { BrowserRouter as Router, Route, Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
+import cn from 'classnames';
+
 
 function Navbar() {
+  const [showNav, setShowNav] = useState(false);
+  const [navClassNames, setNavClassNames] = useState(['collapse', 'navbar-collapse'])
+  const location = useLocation();
+
+  const handleToggle = () => {
+    setNavClassNames(['navbar-collapse', 'collapsing'], { show: showNav });
+    setShowNav(!showNav);
+    setTimeout(() => {
+      if (showNav) {
+        setNavClassNames(['collapse', 'navbar-collapse', 'show']);
+      } else {
+        setNavClassNames(['collapse', 'navbar-collapse']);
+      }
+    },100)
+  };
+
   return (
-    // <Router>
-    //   <nav className="navbar navbar-expand-lg navbar-light bg-light">
-    //     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-    //       <span className="navbar-toggler-icon"></span>
-    //     </button>
-    //     <div className="collapse navbar-collapse" id="navbarNav">
-    //       <ul>
-    //         <li className="nav-item">Home</li>
-    //         <li className="nav-item">Projects</li>
-    //         <li className="nav-item">Portfolio</li>
-    //         <li className="nav-item">Contact Me</li>
-    //       </ul>
-    //     </div>
-    //     <Route path="/" component={<Home />} />
-    //     <Route path="/portfolio" exact component={<Portfolio />} />
-    //     <Route path="/contact" exact component={<Contact />} />
-    //     <Route path="/projects" exact component={<Projects />} />
-    //   </nav>
-    // </Router >
-    <Router>
-      <nav className="navbar navbar-expand-lg navbar-light bg-light">
-        <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-          <span className="navbar-toggler-icon"></span>
-        </button>
-        <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav">
-            <li className="nav-item">
-              <Link to="/">About Me</Link>
-            </li>
-            <li className="nav-item">
-              <Link to="/projects">Projects</Link>
-            </li>
-            <li className="nav-item">
-            <Link to="/portfolio">Portfolio</Link>
-            </li>
-            <li className="nav-item">
-            <Link to="/contact">Contact</Link>
-            </li>
-          </ul>
-        </div>
-      </nav>
-      {/* <Route path="/" element={<Home />} />
-      <Route path="/projects" exact element={<Projects />} />
-      <Route path="/portfolio" exact element={<Portfolio />} />
-      <Route path="/contact" exact element={<Contact />} /> */}
-    </Router>
+    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
+      <Link className="navbar-brand" to="/">
+        Joseph's Portfolio
+            </Link>
+      <button
+        className="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarSupportedContent"
+        aria-controls="navbarSupportedContent"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+        onClick={handleToggle}
+      >
+        <span className="navbar-toggler-icon"></span>
+      </button>
 
-  )
-
+      <div className={cn(navClassNames)} id="navbarSupportedContent">
+        <ul className="navbar-nav mr-auto">
+          <li className={cn('nav-item', { 'active': location.pathname === '/' })}>
+            <Link to="/" className="nav-link">
+              About Me
+            </Link>
+          </li>
+          <li className={cn('nav-item', { 'active': location.pathname === '/projects' })}>
+            <Link to="/projects" className="nav-link">
+              Projects
+            </Link>
+          </li>
+          <li className={cn('nav-item', { 'active': location.pathname === '/portfolio' })}>
+            <Link to="/portfolio" className="nav-link">
+              Portfolio
+            </Link>
+          </li>
+          <li className={cn('nav-item', { 'active': location.pathname === '/contact' })}>
+            <Link to="/contact" className="nav-link">
+              Contact Me
+            </Link>
+          </li>
+        </ul>
+      </div>
+    </nav>
+  );
 }
 
 export default Navbar;
