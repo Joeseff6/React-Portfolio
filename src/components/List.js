@@ -1,14 +1,36 @@
-function List() {
+import { useState } from 'react';
+
+function List({ items, name }) {
+  const [classes,setClasses] = useState("list-group d-none")
+
+  const handleToggle = () => {
+    if (classes === "list-group d-none") {
+      setClasses("list-group")
+    } else {
+      setClasses("list-group d-none")
+    }
+  }
+
   return (
     <div className="row">
-    <ul className="list-group">
-      <li className="list-group-item">An item</li>
-      <li className="list-group-item">A second item</li>
-      <li className="list-group-item">A third item</li>
-      <li className="list-group-item">A fourth item</li>
-      <li className="list-group-item">And a fifth one</li>
-    </ul>
-  </div>
+      <button
+        className="btn"
+        type="button"
+        onClick={handleToggle}
+      >
+      {name}
+      </button>
+      <ul className={classes}>
+        {items?.map(item => (
+          <li
+            key={item}
+            className="list-group-item text-center"
+          >
+            {item}
+          </li>
+        ))}
+      </ul>
+    </div>
   )
 }
 
