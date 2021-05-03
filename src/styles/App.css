@@ -4,9 +4,10 @@
   font-family: 'Merriweather', serif;
 }
 
-h1, .navbar {
+h1, .navbar, .btn, .list-group-item {
   background-color: #122C34;
   border: #296A7A 2px solid;
+  color: #4DCCBD;
 }
 
 .card {
@@ -21,4 +22,8 @@ img {
 a, .navbar-collapse {
   background-color: #122C34;
   color: #4DCCBD;
+}
+
+.btn:hover {
+  color: #296A7A;
 }
