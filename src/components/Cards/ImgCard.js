@@ -1,6 +1,4 @@
-import React from 'react';
 import '../../styles/ImgCard.css'
-
 
 function ImgCard({src,alt,caption}) {
   return (
