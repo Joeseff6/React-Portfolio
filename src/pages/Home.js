@@ -4,6 +4,11 @@ import Headshotpic from '../../src/assets/Images/Headshotpic.jpg';
 import List from '../components/List';
 
 function Home() {
+  const hobbies = ["Shooting billiards", "Coding projects", "Playing video games", "Trading stocks"];
+  const experience = ["HTML 5", "CSS3", "Bootstrap", "Node and Express", "SQL/MySQL", "NoSQL/MongoDB"];
+  const developing = ["React", "React Native", "MERN", "Mongoose", "Sequelize"];
+
+
   return (
     <>
       <div className="row">
@@ -44,8 +49,19 @@ function Home() {
           </div>
         </div>
       </div>
+      <div className="row mt-3">
+        <Header heading="My Lists (click to toggle display)" />
+      </div>
       <div className="row">
-        <List />
+        <div className="col">
+        <List name="My Hobbies" items={hobbies}/>
+        </div>
+        <div className="col">
+        <List name="Experienced Skills" items={experience}/>
+        </div>
+        <div className="col">
+        <List name="Developing Skills" items={developing}/>
+        </div>
       </div>
     </>
   )
