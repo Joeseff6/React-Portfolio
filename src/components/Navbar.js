@@ -1,4 +1,3 @@
-import React from 'react';
 import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import cn from 'classnames';
@@ -22,8 +21,8 @@ function Navbar() {
   };
 
   return (
-    <nav className="navbar navbar-expand-lg navbar-dark bg-dark">
-      <Link className="navbar-brand" to="/">
+    <nav className="navbar navbar-expand-lg mb-3">
+      <Link className="navbar-brand px-3" to="/">
         Joseph's Portfolio
             </Link>
       <button
