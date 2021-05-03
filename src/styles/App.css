@@ -4,7 +4,7 @@
   font-family: 'Merriweather', serif;
 }
 
-h1 {
+h1, .navbar {
   background-color: #122C34;
   border: #296A7A 2px solid;
 }
@@ -16,4 +16,9 @@ h1 {
 img {
   max-width: 280px;
   max-height: 280px;
+}
+
+a, .navbar-collapse {
+  background-color: #122C34;
+  color: #4DCCBD;
 }
