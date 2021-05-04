@@ -29,7 +29,7 @@ function Projects() {
         name="SuitCase"
         heading="Suitcase"
         src={Suitcase}
-        alt=""
+        alt="The homepage of my Suitcase App"
         repo="https://github.com/Joeseff6/Suitcase"
         link="https://joeseff6.github.io/Suitcase/"
         paragraph="The Suitcase application allows the user to search by city, and is then greeted with a list of cities in other countries. 
@@ -42,7 +42,7 @@ function Projects() {
         name="Tech Blog"
         heading="Tech Blog"
         src={TechBlog}
-        alt=""
+        alt="The homepage of my Tech Blog App"
         repo="https://github.com/Joeseff6/BloggersBlog"
         link="https://bloggers-blog123.herokuapp.com/"
         paragraph="The Tech Talk application is an actual webpage that allows users to create a new account or log in to an existing account.
@@ -55,7 +55,7 @@ function Projects() {
         name="Full Stack Quiz"
         heading="Full Stack Quiz"
         src={FullStackQuiz}
-        alt=""
+        alt="The homepage of my Full Stack Quiz App"
         repo="https://github.com/Joeseff6/FullStackCodingQuiz"
         link="https://joeseff6.github.io/FullStackCodingQuiz/"
         paragraph="A quiz will be given as a mini-game to the user, which will provide a series of questions relating to HTML, CSS, and Javascript. 
@@ -67,7 +67,7 @@ function Projects() {
         name="Weather Central"
         heading="Weather Central"
         src={WeatherCentral}
-        alt=""
+        alt="The homepage of my Weather Central App"
         repo="https://github.com/Joeseff6/WeatherCentral"
         link="https://joeseff6.github.io/WeatherCentral/"
         paragraph="The user can go into this web application and pull up the weather for a specified city. Say, for example, the user wants to see the estimated weather in Houston, Texas for the next 5 days. 
@@ -79,7 +79,7 @@ function Projects() {
         name="CLI Employee Tracker"
         heading="CLI Employee Tracker"
         src={CLIEmployeeTracker}
-        alt=""
+        alt="The main menu of my CLI app Employee Tracker"
         repo="https://github.com/Joeseff6/CLIEmployeeTracker"
         link="https://drive.google.com/file/d/1ZKUnaO6HZ4JN5tiaHReqyVNv5ww5mktP/view?usp=sharing"
         paragraph="The user will be able to use this application to manage their employee's information, such as their name, ID, salary, title, and more! 
