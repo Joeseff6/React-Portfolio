@@ -26,7 +26,7 @@ function Navbar() {
         Joseph's Portfolio
             </Link>
       <button
-        className="navbar-toggler"
+        className="navbar-toggler mx-3"
         type="button"
         data-toggle="collapse"
         data-target="#navbarSupportedContent"
@@ -39,7 +39,7 @@ function Navbar() {
       </button>
 
       <div className={cn(navClassNames)} id="navbarSupportedContent">
-        <ul className="navbar-nav mr-auto">
+        <ul className="navbar-nav mr-auto mx-3">
           <li className={cn('nav-item', { 'active': location.pathname === '/' })}>
             <Link to="/" className="nav-link">
               About Me

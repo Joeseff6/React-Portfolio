@@ -1,0 +1,22 @@
+.projectContainer {
+  width: 85vw;
+  border: #296A7A 2px solid;
+}
+
+.projectCard {
+  width: 80vw;
+  display: block;
+  margin: auto;
+}
+
+.paragraphField {
+  background-color: #122C34;
+  border: #296A7A 2px solid;
+  color: #4DCCBD;
+}
+
+.btn {
+  width: 200px;
+  display: block;
+  margin: auto;
+}
