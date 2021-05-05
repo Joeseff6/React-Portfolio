@@ -1,0 +1,32 @@
+{
+  "files": {
+    "main.css": "/React-Portfolio/static/css/main.b1e0fe77.chunk.css",
+    "main.js": "/React-Portfolio/static/js/main.a908e7a3.chunk.js",
+    "main.js.map": "/React-Portfolio/static/js/main.a908e7a3.chunk.js.map",
+    "runtime-main.js": "/React-Portfolio/static/js/runtime-main.8e19d3e9.js",
+    "runtime-main.js.map": "/React-Portfolio/static/js/runtime-main.8e19d3e9.js.map",
+    "static/js/2.4f9c55c9.chunk.js": "/React-Portfolio/static/js/2.4f9c55c9.chunk.js",
+    "static/js/2.4f9c55c9.chunk.js.map": "/React-Portfolio/static/js/2.4f9c55c9.chunk.js.map",
+    "index.html": "/React-Portfolio/index.html",
+    "static/css/main.b1e0fe77.chunk.css.map": "/React-Portfolio/static/css/main.b1e0fe77.chunk.css.map",
+    "static/js/2.4f9c55c9.chunk.js.LICENSE.txt": "/React-Portfolio/static/js/2.4f9c55c9.chunk.js.LICENSE.txt",
+    "static/media/CLIEmployeeTracker.626c0661.PNG": "/React-Portfolio/static/media/CLIEmployeeTracker.626c0661.PNG",
+    "static/media/Citypic.4b263049.jpg": "/React-Portfolio/static/media/Citypic.4b263049.jpg",
+    "static/media/Fountainpic.c21c30a9.jpg": "/React-Portfolio/static/media/Fountainpic.c21c30a9.jpg",
+    "static/media/Gradpic.a0d792d4.jpg": "/React-Portfolio/static/media/Gradpic.a0d792d4.jpg",
+    "static/media/Homepage.c8345224.JPG": "/React-Portfolio/static/media/Homepage.c8345224.JPG",
+    "static/media/Poolpic.ebbaf5cc.jpg": "/React-Portfolio/static/media/Poolpic.ebbaf5cc.jpg",
+    "static/media/Posepic.8e5e20e3.jpg": "/React-Portfolio/static/media/Posepic.8e5e20e3.jpg",
+    "static/media/ResumePDF.cb901cfe.pdf": "/React-Portfolio/static/media/ResumePDF.cb901cfe.pdf",
+    "static/media/TechBlog.e362c408.PNG": "/React-Portfolio/static/media/TechBlog.e362c408.PNG",
+    "static/media/fullStackQuiz.15538ae6.PNG": "/React-Portfolio/static/media/fullStackQuiz.15538ae6.PNG",
+    "static/media/suitcase.5b5361da.PNG": "/React-Portfolio/static/media/suitcase.5b5361da.PNG",
+    "static/media/weatherCentral.8e8e738e.PNG": "/React-Portfolio/static/media/weatherCentral.8e8e738e.PNG"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.8e19d3e9.js",
+    "static/js/2.4f9c55c9.chunk.js",
+    "static/css/main.b1e0fe77.chunk.css",
+    "static/js/main.a908e7a3.chunk.js"
+  ]
+}
