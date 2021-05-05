@@ -9,25 +9,27 @@ _Insert link here_
 ## Table of Contents
 
 1. [Project Description](#project-description)
-2. [What to Expect From the Application](#What-to-Expect-From-the-Application)
-3. [Tech Stack](#Tech-Stack)
-4. [Goals for Deployment](#Goals-for-Deployment)
-5. [Screenshots](#Screenshots)
+2. [Tech Stack](#Tech-Stack)
+3. [Screenshots](#Screenshots)
 
 ## Project Description 
 
+This project is simply my professional portfolio, which is built using React. This is a comparison to my previous portfolio project, where I used Bootstrap to achieve a responsive web page. This page is an actual application, as it has button functionality to add a little magic to my portfolio!
 
-
-## What to Expect From the Application
-
-
+I used function components to build this portfolio, which was helpful in terms of re-using interactions throughout the application. This was a lot of work to start up, but once my components where made, I was able to freely use them all over my portfolio! A couple components I made include a navigation bar and footer, a header, containers for my projects and images (separately), and a list. My projects and lists toggle display by button-click, which was easily achievable using React hooks.
 
 ## Tech Stack
 
-
-## Goals for Deployment
-
-
+* HTML5
+* CSS3
+* Javascript
+* Node.js
+* React
 
 ## Screenshots
 
+![The about me page of my portfolio](./public/assets/Capture1.JPG)
+
+![The projects page of my portfolio](./public/assets/Capture2.JPG)
+
+![The contact page of my portfolio](./public/assets/Capture3.JPG)
