@@ -7,12 +7,27 @@ import TechBlog from '../assets/Images/TechBlog.PNG';
 import Homepage from '../assets/Images/Homepage.JPG';
 import WeatherCentral from '../assets/Images/weatherCentral.PNG';
 import CLIEmployeeTracker from '../assets/Images/CLIEmployeeTracker.PNG';
+import MERNGoogleBooks from '../assets/Images/GoogleBooks.JPG';
+
 
 
 function Projects() {
   return (
     <>
       <Header heading="Projects (Click to toggle display)" />
+      <ProjectCard
+        name="MERN Google Books"
+        heading="MERN Google Books"
+        src={MERNGoogleBooks}
+        alt=""
+        repo="https://github.com/Joeseff6/MERN-Google-Books"
+        link="https://whispering-springs-93162.herokuapp.com/"
+        paragraph="Google has many APIs that are very commonly used in every day life. In fact, we use a lot of these APIs just through google.com! 
+        When we send a search query on google.com, we are utilizing a Google API at that moment. 
+        The links such as Shopping, Images, and even Books, utilize an individual API! 
+        So for this application, I am essentially using the technology from the 'Books' link to allow a user to search for any book by title, and give them the ability to save that book (or item) to a saved page for later retrieval. 
+        Since these saved books are stored through MongoDB Atlas, the user can always come back to the page, sign up or sign in, and retrieve their list at any time!"
+      />
       <ProjectCard
         name="Song N' Seek"
         heading="Song N' Seek"
