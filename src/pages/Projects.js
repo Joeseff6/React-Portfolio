@@ -8,7 +8,7 @@ import Homepage from '../assets/Images/Homepage.JPG';
 import WeatherCentral from '../assets/Images/weatherCentral.PNG';
 import CLIEmployeeTracker from '../assets/Images/CLIEmployeeTracker.PNG';
 import MERNGoogleBooks from '../assets/Images/GoogleBooks.JPG';
-
+import StayRnb from '../assets/Images/StayRnb.JPG';
 
 
 function Projects() {
@@ -16,10 +16,23 @@ function Projects() {
     <>
       <Header heading="Projects (Click to toggle display)" />
       <ProjectCard
+        name="Stay RnB"
+        heading="Stay RnB"
+        src={StayRnb}
+        alt="Homepage for the StayRnB app"
+        repo="https://github.com/Joeseff6/Stay-RnB-Backend"
+        link="https://stay-rnb-server.herokuapp.com/"
+        paragraph="Stay RnB is a crossover between the popular AirBnB app and your long term contract stays.
+        It is intended for users who needs a room and board for longer than a week, but for a shorter period than an annual lease term.
+        This full-stack MERN app features two separate login instances; Users can view and book boarding, while Hosts can post listings.
+        We emphasize on a Host-User relationship, where a User will be able to contact Hosts and the Host will be associated to the User
+        upon booking the boarding."
+      />
+      <ProjectCard
         name="MERN Google Books"
         heading="MERN Google Books"
         src={MERNGoogleBooks}
-        alt=""
+        alt="Homepage for the MERN Google Books app"
         repo="https://github.com/Joeseff6/MERN-Google-Books"
         link="https://whispering-springs-93162.herokuapp.com/"
         paragraph="Google has many APIs that are very commonly used in every day life. In fact, we use a lot of these APIs just through google.com! 
@@ -32,7 +45,7 @@ function Projects() {
         name="Song N' Seek"
         heading="Song N' Seek"
         src={Homepage}
-        alt=""
+        alt="Homepage for the Song N' Seek app"
         repo="https://github.com/Joeseff6/SongNSeek"
         link="https://song-n-seek.herokuapp.com/"
         paragraph="Song N' Seek is the perfect example of user interaction on the client-side to communicate with server-side applications.
