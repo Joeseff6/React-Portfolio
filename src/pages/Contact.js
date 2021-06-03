@@ -112,7 +112,7 @@ function Contact() {
               </p>
               <p>
                 {codewarsProfile.ranks
-                  ? "Javascript: " +
+                  ? "JScript: " +
                     codewarsProfile.ranks.languages.javascript.name +
                     " / Score: " +
                     codewarsProfile.ranks.languages.javascript.score
