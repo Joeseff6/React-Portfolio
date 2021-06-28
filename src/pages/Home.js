@@ -5,8 +5,8 @@ import List from '../components/List';
 
 function Home() {
   const hobbies = ["Shooting billiards", "Coding projects", "Playing video games", "Trading stocks"];
-  const experience = ["HTML 5", "CSS3", "Bootstrap", "Node and Express", "SQL/MySQL", "NoSQL/MongoDB"];
-  const developing = ["React", "React Native", "MERN", "Mongoose", "Sequelize"];
+  const positions = ["Full Stack Developer", "Junior Software Engineer", "Back-End Developer", "Front-End Developer"];
+  const developing = ["HTML5", "CSS3", "Javascript", "Node.js", "Express.js", "SQL (MySQL)", "NoSQL (MongoDB)", "Deployment (Heroku/Netlify)", "React"];
 
 
   return (
@@ -57,10 +57,10 @@ function Home() {
         <List name="My Hobbies" items={hobbies}/>
         </div>
         <div className="col">
-        <List name="Experienced Skills" items={experience}/>
+        <List name="Preferred Positions" items={positions}/>
         </div>
         <div className="col">
-        <List name="Developing Skills" items={developing}/>
+        <List name="Technical Skills" items={developing}/>
         </div>
       </div>
     </>
