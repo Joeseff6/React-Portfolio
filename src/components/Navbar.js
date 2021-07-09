@@ -77,7 +77,14 @@ function Navbar() {
           <li
             className={cn("nav-item", { active: location.pathname === "/#" })}
           >
-            <a href="https://bloggers-blog123.herokuapp.com/" target="_blank" className="nav-link">My Blog Site</a>
+            <a
+              href="https://bloggers-blog123.herokuapp.com/"
+              target="_blank"
+              rel="noreferrer"
+              className="nav-link"
+            >
+              My Blog Site
+            </a>
           </li>
         </ul>
       </div>
