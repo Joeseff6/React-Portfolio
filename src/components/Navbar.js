@@ -12,7 +12,7 @@ function Navbar() {
     setNavClassNames(['navbar-collapse', 'collapsing'], { show: showNav });
     setShowNav(!showNav);
     setTimeout(() => {
-      if (showNav) {
+      if (!showNav) {
         setNavClassNames(['collapse', 'navbar-collapse', 'show']);
       } else {
         setNavClassNames(['collapse', 'navbar-collapse']);
