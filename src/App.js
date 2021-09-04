@@ -1,25 +1,8 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Main from '../src/layouts/Main';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import './styles/App.css'
-
+import React from "react";
 
 function App() {
   return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Main />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
+    <h1>This is my portfolio refactor</h1>
   );
 }
 
