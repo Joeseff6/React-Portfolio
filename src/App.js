@@ -1,13 +1,14 @@
 import React from "react";
-import AboutMeSection from "./components/AboutMeSection";
+import Section from "./components/Section";
+import { Container } from "semantic-ui-react";
+import "./App.css";
 
 function App() {
   return (
-    <div>
-      <AboutMeSection />
-      <AboutMeSection />
-
-    </div>
+    <Container fluid>
+      <Section />
+      <Section />
+    </Container>
   );
 }
 
