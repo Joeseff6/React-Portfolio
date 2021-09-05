@@ -3,8 +3,10 @@ import AboutMeSection from "./components/AboutMeSection";
 
 function App() {
   return (
-    <div className="h-screen">
+    <div>
       <AboutMeSection />
+      <AboutMeSection />
+
     </div>
   );
 }

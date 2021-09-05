@@ -1,10 +1,9 @@
 import React from "react";
+import Image from"./Image";
 
 const Section = () => {
   return (
-    <div className="w-full h-1/3 mb-4" style={{ border: "black 2px solid" }}>
-      <h1 className="text-center">About me section</h1>
-    </div>
+    <h1>This is a section</h1>
   );
 };
 
