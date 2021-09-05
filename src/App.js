@@ -1,10 +1,12 @@
 import React from "react";
+import AboutMeSection from "./components/AboutMeSection";
 
 function App() {
   return (
-    <h1>This is my portfolio refactor</h1>
+    <div className="h-screen">
+      <AboutMeSection />
+    </div>
   );
 }
-
 
 export default App;
