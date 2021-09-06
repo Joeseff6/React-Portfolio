@@ -15,7 +15,6 @@ const Section = ({ children }) => {
   return (
     <Fade appear={true} in={fadeIn} onEnter={delayFadeIn()}>
       <Row className="section my-5">
-        <h1>This component is used to wrap the sections</h1>
         {children}
       </Row>
     </Fade>
