@@ -1,11 +1,20 @@
-import React from 'react'
+import React from "react";
+import Image from "react-bootstrap/Image";
+import Row from "react-bootstrap/Row";
+import Col from "react-bootstrap/Col";
+import ProfilePic from "../assets/images/Profilepic.jpg";
+import Container from "react-bootstrap/Container";
 
 const AboutMeSection = () => {
   return (
-    <div>
-      <h1>This is the about me section</h1>
-    </div>
-  )
-}
+    <>
+      <Col className="p-0 h-100">
+        <Image src={ProfilePic} fluid rounded className="h-100" />
+      </Col>
+      <Col></Col>
+      <Col></Col>
+    </>
+  );
+};
 
-export default AboutMeSection
+export default AboutMeSection;
