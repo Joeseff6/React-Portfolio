@@ -5,6 +5,7 @@ import Col from "react-bootstrap/Col";
 import ProfilePic from "../assets/images/Profilepic.jpg";
 import Container from "react-bootstrap/Container";
 import Header from "./Header";
+import List from "./List";
 
 const AboutMeSection = () => {
   return (
@@ -18,8 +19,8 @@ const AboutMeSection = () => {
         </Row>
         <Row>
           <Col>
-            <Header title="My Bio" fontSize={2} />
-            <p className="fs-5 px-5">
+            <Header title="My Bio" fontSize={2} verticalMargin={3}/>
+            <p className="fs-5 px-5 lh-base overflow-auto bio">
               <span className="indent">Hi!</span> My name is Joseph Soria, and I am a graduate from the
               University of Houston. I majored in Mechanical Engineering, and have worked in the Oil and Gas industry
               since 2011. I am currently developing my Full Stack Engineering skills, with my main focus in 
@@ -28,7 +29,8 @@ const AboutMeSection = () => {
             </p>
           </Col>
           <Col>
-            <Header title="Contact Me" fontSize={2} />
+            <Header title="Contact Me" fontSize={2} verticalMargin={3}/>
+            <List />
           </Col>
         </Row>
       </Col>
