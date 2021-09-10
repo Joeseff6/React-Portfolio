@@ -21,4 +21,8 @@ const Section = ({ children, fadeDirection }) => {
   );
 };
 
+Section.defaultProps = {
+  fadeDirection: "right",
+}
+
 export default Section;
