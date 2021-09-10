@@ -3,7 +3,7 @@ import Row from "react-bootstrap/Row";
 import Fade from "react-bootstrap/Fade";
 import "./Section.css";
 
-const Section = ({ children }) => {
+const Section = ({ children, fadeDirection }) => {
   const [ fadeIn, setFadeIn ] = useState(false);
 
   const delayFadeIn = () => {
@@ -14,7 +14,7 @@ const Section = ({ children }) => {
 
   return (
     <Fade appear={true} in={fadeIn} onEnter={delayFadeIn()}>
-      <Row className="section my-5">
+      <Row className={`section-fade-${fadeDirection} my-5`}>
         {children}
       </Row>
     </Fade>
