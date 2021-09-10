@@ -151,3 +151,11 @@ p,
 span {
   font-family: "Libre Baskerville", serif;
 }
+
+.indent {
+  margin-left: 40px;
+}
+
+.bio {
+  height: 200px;
+}
