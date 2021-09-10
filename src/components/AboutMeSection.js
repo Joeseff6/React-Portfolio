@@ -16,10 +16,16 @@ const AboutMeSection = () => {
         <Row>
           <Header title="Who Am I?" fontSize={1} />
         </Row>
-        <Row style={{ border: "black 2px solid" }}>
+        <Row>
           <Col>
             <Header title="My Bio" fontSize={2} />
-            <p className="fs-5 px-5">This is some text </p>
+            <p className="fs-5 px-5">
+              <span className="indent">Hi!</span> My name is Joseph Soria, and I am a graduate from the
+              University of Houston. I majored in Mechanical Engineering, and have worked in the Oil and Gas industry
+              since 2011. I am currently developing my Full Stack Engineering skills, with my main focus in 
+              Web Development using React. My Hobbies include shooting pool, trading in the stock market, 
+              and coding of course!
+            </p>
           </Col>
           <Col>
             <Header title="Contact Me" fontSize={2} />
