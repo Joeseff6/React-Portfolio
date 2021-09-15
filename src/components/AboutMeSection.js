@@ -8,15 +8,15 @@ import Header from "./Header";
 import List from "./List";
 
 const AboutMeSection = () => {
-  const [ showOverflow, setShowOverflow ] = useState("overflow-hidden");
+  const [showOverflow, setShowOverflow] = useState("overflow-hidden");
 
   const onHover = () => {
     setShowOverflow("overflow-auto");
-  }
+  };
 
   const onLeaveHover = () => {
     setShowOverflow("overflow-hidden");
-  }
+  };
 
   return (
     <>
@@ -29,17 +29,23 @@ const AboutMeSection = () => {
         </Row>
         <Row>
           <Col>
-            <Header title="My Bio" fontSize={2} verticalMargin={3}/>
-            <p className={`fs-5 px-5 lh-base ${showOverflow} bio`} onMouseEnter={onHover} onMouseLeave={onLeaveHover}>
-              <span className="indent">Hi!</span> My name is Joseph Soria, and I am a graduate from the
-              University of Houston. I majored in Mechanical Engineering, and have worked in the Oil and Gas industry
-              since 2011. I am currently developing my Full Stack Engineering skills, with my main focus in 
-              Web Development using React. My Hobbies include shooting pool, trading in the stock market, 
-              and coding of course!
+            <Header title="My Bio" fontSize={2} verticalMargin={3} />
+            <p
+              className={`fs-5 px-5 lh-base ${showOverflow} bio`}
+              onMouseEnter={onHover}
+              onMouseLeave={onLeaveHover}
+            >
+              <span className="indent">Hi!</span> My name is Joseph Soria, and I
+              am a graduate from the University of Houston. I majored in
+              Mechanical Engineering, and have worked in the Oil and Gas
+              industry since 2011. I am currently developing my Full Stack
+              Engineering skills, with my main focus in Web Development using
+              React. My Hobbies include shooting pool, trading in the stock
+              market, and coding of course!
             </p>
           </Col>
           <Col>
-            <Header title="Contact Me" fontSize={2} verticalMargin={3}/>
+            <Header title="Contact Me" fontSize={2} verticalMargin={3} />
             <List />
           </Col>
         </Row>
