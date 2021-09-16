@@ -31,7 +31,7 @@ const AboutMeSection = () => {
           <Col>
             <Header title="My Bio" fontSize={2} verticalMargin={3} />
             <p
-              className={`fs-5 px-5 lh-base ${showOverflow} bio`}
+              className={`fs-5 px-4 lh-base ${showOverflow} bio`}
               onMouseEnter={onHover}
               onMouseLeave={onLeaveHover}
             >
