@@ -1,6 +1,5 @@
 import React from "react";
 import Fade from "react-bootstrap/Fade";
-import Row from "react-bootstrap/Row";
 
 class FadeComponent extends React.Component {
   constructor(props) {
