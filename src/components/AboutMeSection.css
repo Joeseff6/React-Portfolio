@@ -1,0 +1,26 @@
+.indent {
+  margin-left: 40px;
+}
+
+.bio {
+  height: 200px;
+  background: linear-gradient(
+    205deg,
+    rgba(84, 243, 244, 0.2) 0%,
+    rgba(90, 168, 244, 0.2) 33%,
+    rgba(90, 119, 244, 0.2) 66%,
+    rgba(255, 66, 19, 0.2) 100%
+  );
+  border-radius: 10px;
+  border: rgb(49, 31, 27) 1px solid;
+}
+
+.list-group-item {
+  margin-bottom: 10px;
+  border-radius: 2px;
+  border: rgb(49, 31, 27) 1px solid;
+}
+
+svg {
+  margin-right: 15px;
+}
