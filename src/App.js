@@ -4,6 +4,7 @@ import Container from "react-bootstrap/Container";
 import Section from "./components/Section";
 import Nav from "./components/Nav";
 import AboutMeSection from "./components/AboutMeSection";
+import TechnicalSkillsSection from "./components/TechnicalSkillsSection";
 import FadeComponent from "./components/FadeComponent";
 
 export default class App extends Component {
@@ -17,7 +18,9 @@ export default class App extends Component {
           </Section>
         </FadeComponent>
         <FadeComponent fadeTimer={1000}>
-          <Section fadeDirection="left"></Section>
+          <Section fadeDirection="left">
+            <TechnicalSkillsSection />
+          </Section>
         </FadeComponent>
         <FadeComponent fadeTimer={1500}>
           <Section fadeDirection="right"></Section>
