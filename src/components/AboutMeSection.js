@@ -6,6 +6,7 @@ import ProfilePic from "../assets/images/Profilepic.jpg";
 import Header from "./Header";
 import List from "./List";
 import FadeComponent from "./FadeComponent";
+import CollapseComponent from "./CollapseComponent";
 import "./AboutMeSection.css";
 
 const AboutMeSection = () => {
@@ -25,10 +26,10 @@ const AboutMeSection = () => {
         <Image src={ProfilePic} fluid rounded className="h-100 flex-grow-1" />
       </Col>
       <Col>
-        <Row>
-          <Header title="Who Am I?" fontSize={1} />
-        </Row>
         <FadeComponent fadeTimer={750}>
+          <Row>
+            <Header title="Who Am I?" fontSize={1} />
+          </Row>
           <Row>
             <Col>
               <Header title="My Bio" fontSize={2} verticalMargin={3} />
@@ -48,7 +49,9 @@ const AboutMeSection = () => {
             </Col>
             <Col>
               <Header title="Contact Me" fontSize={2} verticalMargin={3} />
-              <List />
+              <CollapseComponent collapseTimer={1000}>
+                <List />
+              </CollapseComponent>
             </Col>
           </Row>
         </FadeComponent>
