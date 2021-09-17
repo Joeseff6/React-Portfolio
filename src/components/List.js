@@ -26,8 +26,11 @@ const List = () => {
       </ListGroup.Item>
       <ListGroup.Item>
         Github:{" "}
-        <a href="https://github.com/Joeseff6" target="_blank">
-          www.github.com/joeseff6
+        <a href="https://github.com/Joeseff6" 
+          target="_blank" 
+          rel="noreferrer"
+          >
+            www.github.com/joeseff6
         </a>
       </ListGroup.Item>
       <ListGroup.Item>
@@ -35,6 +38,7 @@ const List = () => {
         <a
           href="https://linkedin.com/in/joseph-soria-5a335845/"
           target="_blank"
+          rel="noreferrer"
         >
           https://www.linkedin.com/in/joseph-soria-5a335845/
         </a>
