@@ -1,5 +1,11 @@
 import ListGroup from "react-bootstrap/ListGroup";
 import { useState } from "react";
+import {
+  InboxFill,
+  PhoneVibrateFill,
+  Github,
+  Linkedin,
+} from "react-bootstrap-icons";
 
 const List = () => {
   const [transformText, setTransformText] = useState(false);
@@ -15,6 +21,7 @@ const List = () => {
   return (
     <ListGroup className="text-center">
       <ListGroup.Item>
+        <InboxFill className="" size={24} />
         Email:{" "}
         <a href="mailto: josephsoria6@gmail.com">josephsoria6@gmail.com</a>
       </ListGroup.Item>
@@ -22,18 +29,18 @@ const List = () => {
         onMouseEnter={handleHover}
         onMouseLeave={handleHLeaveHover}
       >
+        <PhoneVibrateFill size={24} />
         Phone: {!transformText ? "Hover to display!" : "832-657-9060"}
       </ListGroup.Item>
       <ListGroup.Item>
+        <Github size={24} />
         Github:{" "}
-        <a href="https://github.com/Joeseff6" 
-          target="_blank" 
-          rel="noreferrer"
-          >
-            www.github.com/joeseff6
+        <a href="https://github.com/Joeseff6" target="_blank" rel="noreferrer">
+          www.github.com/joeseff6
         </a>
       </ListGroup.Item>
       <ListGroup.Item>
+        <Linkedin size={24} />
         LinkedIn:{" "}
         <a
           href="https://linkedin.com/in/joseph-soria-5a335845/"
