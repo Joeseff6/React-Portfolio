@@ -19,7 +19,7 @@ const List = () => {
   };
 
   return (
-    <ListGroup className="text-center">
+    <ListGroup className="text-center lh-sm">
       <ListGroup.Item>
         <InboxFill className="" size={24} />
         Email:{" "}
@@ -36,7 +36,7 @@ const List = () => {
         <Github size={24} />
         Github:{" "}
         <a href="https://github.com/Joeseff6" target="_blank" rel="noreferrer">
-          www.github.com/joeseff6
+          See my repos!
         </a>
       </ListGroup.Item>
       <ListGroup.Item>
@@ -47,7 +47,7 @@ const List = () => {
           target="_blank"
           rel="noreferrer"
         >
-          https://www.linkedin.com/in/joseph-soria-5a335845/
+          Connect with me!
         </a>
       </ListGroup.Item>
     </ListGroup>
