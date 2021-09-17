@@ -42,6 +42,11 @@ p::-webkit-scrollbar-thumb {
   border: rgb(49, 31, 27) 1px solid;
 }
 
+a {
+  color:rgb(0, 0, 0);
+  font-weight: bolder;
+}
+
 svg {
   margin-right: 15px;
 }
