@@ -28,7 +28,7 @@ const AboutMeSection = () => {
       <Col>
         <FadeComponent fadeTimer={750}>
           <Row>
-            <Header title="Who Am I?" fontSize={1} />
+            <Header title="Who Am I?" />
           </Row>
           <Row>
             <Col>
