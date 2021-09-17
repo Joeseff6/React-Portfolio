@@ -148,7 +148,7 @@ h1 {
 }
 
 p,
-span {
+span, .list-group-item {
   font-family: "Libre Baskerville", serif;
 }
 
