@@ -5,25 +5,34 @@ import Col from "react-bootstrap/Col";
 import Header from "./Header";
 import FadeComponent from "./FadeComponent";
 import CollapseComponent from "./CollapseComponent";
+import Carousel from "react-bootstrap/Carousel";
 
 const TechnicalSkillsSection = () => {
   return (
     <>
       <Col>
         <Row>
-          <h1>This is the heading</h1>
+          <Header title="Technical Skills" />
         </Row>
         <Row>
           <Col>
-            <h1>These are my Technical Skills</h1>
+            <Header
+              title="My Technical Skills"
+              heading={3}
+              verticalMargin={3}
+            />
           </Col>
           <Col>
-            <h1>These are my preferred positions</h1>
+            <Header
+              title="Preferred Positions"
+              heading={3}
+              verticalMargin={3}
+            />
           </Col>
         </Row>
       </Col>
       <Col>
-        <h1>This is an image</h1>
+        <Image src="" fluid rounded className="h-100 flex-grow-1" />
       </Col>
     </>
   );
