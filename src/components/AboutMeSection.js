@@ -3,9 +3,9 @@ import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Header from "./Header";
 import List from "./List";
+import ImageCarousel from "./ImageCarousel";
 import FadeComponent from "./FadeComponent";
 import CollapseComponent from "./CollapseComponent";
-import Carousel from "react-bootstrap/Carousel";
 import { aboutMeImages, aboutMeListItems } from "../utils/listObjects";
 import "./AboutMeSection.css";
 
@@ -23,15 +23,7 @@ const AboutMeSection = () => {
   return (
     <>
       <Col className="p-0" md={3}>
-        <Carousel controls={false} indicators={false} interval={3000} fade pause={false}>
-          {aboutMeImages.map((image) => {
-            return (
-              <Carousel.Item key={image.alt}>
-                <img src={image.image} alt={image.alt} className={"w-100"} />
-              </Carousel.Item>
-            );
-          })}
-        </Carousel>
+        <ImageCarousel images={aboutMeImages} />
       </Col>
       <Col>
         <FadeComponent fadeTimer={750}>
