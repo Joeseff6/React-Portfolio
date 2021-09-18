@@ -1,38 +1,17 @@
 import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ProfilePic from "../assets/images/Profilepic.jpg";
-import GradPic from "../assets/images/Gradpic.jpg";
-import CityPic from "../assets/images/Citypic.jpg";
-import PoolPic from "../assets/images/Poolpic.jpg";
 import Header from "./Header";
 import List from "./List";
 import FadeComponent from "./FadeComponent";
 import CollapseComponent from "./CollapseComponent";
 import Carousel from "react-bootstrap/Carousel";
+import { aboutMeImages, aboutMeListItems } from "../utils/listObjects";
 import "./AboutMeSection.css";
+
 
 const AboutMeSection = () => {
   const [showOverflow, setShowOverflow] = useState("overflow-hidden");
-
-  const images = [
-    {
-      image: ProfilePic,
-      alt: "A headshot of me with a blurred background",
-    },
-    {
-      image: GradPic,
-      alt: "Me posing at the Engineering school at the University of Houston",
-    },
-    {
-      image: CityPic,
-      alt: "Me standing oustide in the city with buildings in the background",
-    },
-    {
-      image: PoolPic,
-      alt: "A focused shot of me while I was shooting pool",
-    },
-  ];
 
   const onHover = () => {
     setShowOverflow("overflow-auto");
@@ -46,9 +25,9 @@ const AboutMeSection = () => {
     <>
       <Col className="p-0" md={3}>
         <Carousel controls={false} indicators={false} interval={3000}>
-          {images.map((image) => {
+          {aboutMeImages.map((image) => {
             return (
-              <Carousel.Item>
+              <Carousel.Item key={image.alt}>
                 <img src={image.image} alt={image.alt} className={"w-100"} />
               </Carousel.Item>
             );
@@ -80,7 +59,7 @@ const AboutMeSection = () => {
             <Col>
               <Header title="Contact Me" heading={2} verticalMargin={3} />
               <CollapseComponent collapseTimer={1250}>
-                <List />
+                <List listItems={aboutMeListItems}/>
               </CollapseComponent>
             </Col>
           </Row>
