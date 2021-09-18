@@ -5,7 +5,9 @@ import Col from "react-bootstrap/Col";
 import Header from "./Header";
 import FadeComponent from "./FadeComponent";
 import CollapseComponent from "./CollapseComponent";
-import Carousel from "react-bootstrap/Carousel";
+import List from "./List";
+import ImageCarousel from "./ImageCarousel";
+import { technicalImages } from "../utils/listObjects";
 
 const TechnicalSkillsSection = () => {
   return (
@@ -31,8 +33,8 @@ const TechnicalSkillsSection = () => {
           </Col>
         </Row>
       </Col>
-      <Col>
-        <Image src="" fluid rounded className="h-100 flex-grow-1" />
+      <Col md={3}>
+        <ImageCarousel images={technicalImages} />
       </Col>
     </>
   );
