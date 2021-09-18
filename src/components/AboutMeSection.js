@@ -1,16 +1,38 @@
 import React, { useState } from "react";
-import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import ProfilePic from "../assets/images/Profilepic.jpg";
+import GradPic from "../assets/images/Gradpic.jpg";
+import CityPic from "../assets/images/Citypic.jpg";
+import PoolPic from "../assets/images/Poolpic.jpg";
 import Header from "./Header";
 import List from "./List";
 import FadeComponent from "./FadeComponent";
 import CollapseComponent from "./CollapseComponent";
+import Carousel from "react-bootstrap/Carousel";
 import "./AboutMeSection.css";
 
 const AboutMeSection = () => {
   const [showOverflow, setShowOverflow] = useState("overflow-hidden");
+
+  const images = [
+    {
+      image: ProfilePic,
+      alt: "A headshot of me with a blurred background",
+    },
+    {
+      image: GradPic,
+      alt: "Me posing at the Engineering school at the University of Houston",
+    },
+    {
+      image: CityPic,
+      alt: "Me standing oustide in the city with buildings in the background",
+    },
+    {
+      image: PoolPic,
+      alt: "A focused shot of me while I was shooting pool",
+    },
+  ];
 
   const onHover = () => {
     setShowOverflow("overflow-auto");
@@ -22,8 +44,16 @@ const AboutMeSection = () => {
 
   return (
     <>
-      <Col className="p-0 h-100 d-flex" md={3}>
-        <Image src={ProfilePic} fluid rounded className="h-100 flex-grow-1" />
+      <Col className="p-0" md={3}>
+        <Carousel controls={false} indicators={false} interval={3000}>
+          {images.map((image) => {
+            return (
+              <Carousel.Item>
+                <img src={image.image} alt={image.alt} className={"w-100"} />
+              </Carousel.Item>
+            );
+          })}
+        </Carousel>
       </Col>
       <Col>
         <FadeComponent fadeTimer={750}>
@@ -32,7 +62,7 @@ const AboutMeSection = () => {
           </Row>
           <Row>
             <Col>
-              <Header title="My Bio" fontSize={2} verticalMargin={3} />
+              <Header title="My Bio" heading={2} verticalMargin={3} />
               <p
                 className={`fs-5 px-4 lh-base ${showOverflow} bio`}
                 onMouseEnter={onHover}
@@ -48,7 +78,7 @@ const AboutMeSection = () => {
               </p>
             </Col>
             <Col>
-              <Header title="Contact Me" fontSize={2} verticalMargin={3} />
+              <Header title="Contact Me" heading={2} verticalMargin={3} />
               <CollapseComponent collapseTimer={1000}>
                 <List />
               </CollapseComponent>
