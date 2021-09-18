@@ -1,6 +1,6 @@
-const Header = ({ title, fontSize, verticalMargin }) => {
+const Header = ({ title, heading, verticalMargin }) => {
   return (
-    <h1 className={`my-${verticalMargin} fs-${fontSize} text-center`}>
+    <h1 className={`my-${verticalMargin} fs-${heading} text-center`}>
       {title}
     </h1>
   );
@@ -8,7 +8,7 @@ const Header = ({ title, fontSize, verticalMargin }) => {
 
 Header.defaultProps = {
   title: "This is a header",
-  fontSize: 1,
+  heading: 1,
   verticalMargin: 2,
 };
 
