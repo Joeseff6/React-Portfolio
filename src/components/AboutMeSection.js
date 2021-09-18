@@ -79,7 +79,7 @@ const AboutMeSection = () => {
             </Col>
             <Col>
               <Header title="Contact Me" heading={2} verticalMargin={3} />
-              <CollapseComponent collapseTimer={1000}>
+              <CollapseComponent collapseTimer={1250}>
                 <List />
               </CollapseComponent>
             </Col>
