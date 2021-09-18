@@ -3,7 +3,7 @@ import Carousel from "react-bootstrap/Carousel";
 
 const ImageCarousel = ({ images }) => {
   return (
-    <Carousel controls={false} indicators={false} interval={3000} fade pause={false}>
+    <Carousel controls={false} indicators={false} interval={4000} pause={false}>
     {images.map((image) => {
       return (
         <Carousel.Item key={image.alt}>
