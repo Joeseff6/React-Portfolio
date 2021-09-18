@@ -9,7 +9,6 @@ import Carousel from "react-bootstrap/Carousel";
 import { aboutMeImages, aboutMeListItems } from "../utils/listObjects";
 import "./AboutMeSection.css";
 
-
 const AboutMeSection = () => {
   const [showOverflow, setShowOverflow] = useState("overflow-hidden");
 
@@ -24,7 +23,7 @@ const AboutMeSection = () => {
   return (
     <>
       <Col className="p-0" md={3}>
-        <Carousel controls={false} indicators={false} interval={3000}>
+        <Carousel controls={false} indicators={false} interval={3000} fade pause={false}>
           {aboutMeImages.map((image) => {
             return (
               <Carousel.Item key={image.alt}>
@@ -59,7 +58,7 @@ const AboutMeSection = () => {
             <Col>
               <Header title="Contact Me" heading={2} verticalMargin={3} />
               <CollapseComponent collapseTimer={1250}>
-                <List listItems={aboutMeListItems}/>
+                <List listItems={aboutMeListItems} />
               </CollapseComponent>
             </Col>
           </Row>
