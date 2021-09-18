@@ -2,6 +2,11 @@ import ProfilePic from "../assets/images/Profilepic.jpg";
 import GradPic from "../assets/images/Gradpic.jpg";
 import CityPic from "../assets/images/Citypic.jpg";
 import PoolPic from "../assets/images/Poolpic.jpg";
+import HolyTrinity from "../assets/images/HolyTrinity.png";
+import ReactLogo from "../assets/images/ReactLogo.png";
+import MySQLLogo from "../assets/images/MySQLLogo.png";
+import MongoDBLogo from "../assets/images/MongoDBLogo.png";
+import NodeJSLogo from "../assets/images/NodeJSLogo.png"
 import {
   Github,
   InboxFill,
@@ -55,4 +60,27 @@ const aboutMeListItems = [
   },
 ];
 
-export { aboutMeImages, aboutMeListItems };
+const technicalImages = [
+  {
+    image: HolyTrinity,
+    alt: "The Javascript, HTML5, and CSS3 logo badges displayed",
+  },
+  {
+    image: ReactLogo,
+    alt: "The standard React.js logo",
+  },
+  {
+    image: NodeJSLogo,
+    alt: "A Node.js Logo",
+  },
+  {
+    image: MongoDBLogo,
+    alt: "A MongoDB Logo",
+  },
+  {
+    image: MySQLLogo,
+    alt: "A MySQL Logo",
+  },
+];
+
+export { aboutMeImages, aboutMeListItems, technicalImages };
