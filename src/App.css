@@ -151,3 +151,7 @@ p,
 span, .list-group-item {
   font-family: "Libre Baskerville", serif;
 }
+
+img {
+  height: 350px;
+}
