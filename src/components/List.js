@@ -21,7 +21,7 @@ const List = () => {
   return (
     <ListGroup className="text-center lh-sm">
       <ListGroup.Item>
-        <InboxFill className="" size={24} />
+        <InboxFill size={24} />
         Email:{" "}
         <a href="mailto: josephsoria6@gmail.com">josephsoria6@gmail.com</a>
       </ListGroup.Item>
