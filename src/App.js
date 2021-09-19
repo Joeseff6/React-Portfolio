@@ -17,12 +17,12 @@ export default class App extends Component {
             <AboutMeSection />
           </Section>
         </FadeComponent>
-        <FadeComponent fadeTimer={1000}>
+        <FadeComponent fadeTimer={1500}>
           <Section fadeDirection="left">
             <TechnicalSkillsSection />
           </Section>
         </FadeComponent>
-        <FadeComponent fadeTimer={1500}>
+        <FadeComponent fadeTimer={2500}>
           <Section fadeDirection="right"></Section>
         </FadeComponent>
       </Container>
