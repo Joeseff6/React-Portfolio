@@ -7,8 +7,7 @@ import FadeComponent from "./FadeComponent";
 import CollapseComponent from "./CollapseComponent";
 import List from "./List";
 import ImageCarousel from "./ImageCarousel";
-import { technicalSkillsListItems } from "../utils/listObjects";
-import { technicalImages } from "../utils/listObjects";
+import { technicalSkillsListItems, technicalImages } from "../utils/mappedObjects/technicalObjects";
 
 const TechnicalSkillsSection = () => {
   const [showOverflow, setShowOverflow] = useState("overflow-hidden");
@@ -48,6 +47,7 @@ const TechnicalSkillsSection = () => {
               heading={3}
               verticalMargin={3}
             />
+            <List listItems={technicalSkillsListItems}/>
           </Col>
         </Row>
       </Col>
