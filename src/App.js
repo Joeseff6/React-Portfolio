@@ -5,6 +5,7 @@ import Section from "./components/Section";
 import Nav from "./components/Nav";
 import AboutMeSection from "./components/AboutMeSection";
 import TechnicalSkillsSection from "./components/TechnicalSkillsSection";
+import ProjectsSection from "./components/ProjectsSection";
 import FadeComponent from "./components/FadeComponent";
 
 export default class App extends Component {
@@ -23,7 +24,9 @@ export default class App extends Component {
           </Section>
         </FadeComponent>
         <FadeComponent fadeTimer={2500}>
-          <Section fadeDirection="right"></Section>
+          <Section fadeDirection="right">
+            <ProjectsSection />
+          </Section>
         </FadeComponent>
       </Container>
     );
