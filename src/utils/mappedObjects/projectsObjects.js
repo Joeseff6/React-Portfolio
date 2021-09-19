@@ -10,31 +10,31 @@ import GoogleBooks from "../../assets/images/GoogleBooks.JPG"
 const projectImages = [
   {
     image: StayRnb,
-    alt: "A headshot of me with a blurred background",
+    alt: "A screenshot of the homepage for my Stay R n b app.",
   },
   {
     image: SongNSeek,
-    alt: "A headshot of me with a blurred background",
+    alt: "A screenshot of the homepage for my Song N Seek app.",
   },
   {
     image: Suitcase,
-    alt: "A headshot of me with a blurred background",
+    alt: "A screenshot of the homepage for my Suitcase app.",
   },
   {
     image: TechBlog,
-    alt: "A headshot of me with a blurred background",
+    alt: "A screenshot of the posts page for my Tech Blog app.",
   },
   {
     image: GoogleBooks,
-    alt: "A headshot of me with a blurred background",
+    alt: "A screenshot of the homepage after sign-in for my Google Books app.",
   },
   {
     image: WeatherCentral,
-    alt: "A headshot of me with a blurred background",
+    alt: "A screenshot of the homepage for my Weather Central app.",
   },
   {
     image: FullStackQuiz,
-    alt: "A headshot of me with a blurred background",
+    alt: "A screenshot of the homepage for my Full Stack Quiz app.",
   },
 ]
 
