@@ -7,7 +7,6 @@ import ImageCarousel from "./ImageCarousel";
 import FadeComponent from "./FadeComponent";
 import CollapseComponent from "./CollapseComponent";
 import { aboutMeImages, aboutMeListItems } from "../utils/listObjects";
-import "./AboutMeSection.css";
 
 const AboutMeSection = () => {
   const [showOverflow, setShowOverflow] = useState("overflow-hidden");
