@@ -1,7 +1,5 @@
 import React from "react";
 import Row from "react-bootstrap/Row";
-import "./Section.css";
-
 class Section extends React.Component {
   render() {
     return (
