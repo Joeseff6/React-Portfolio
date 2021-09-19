@@ -1,5 +1,4 @@
 import React, { useState } from "react";
-import Image from "react-bootstrap/Image";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
 import Header from "./Header";
@@ -37,13 +36,15 @@ const TechnicalSkillsSection = () => {
               heading={3}
               verticalMargin={3}
             />
-            <div
-              className={`${showOverflow} skills-list-box p-4`}
-              onMouseEnter={onHover}
-              onMouseLeave={onLeaveHover}
-            >
-              <List listItems={technicalSkillsListItems} />
-            </div>
+            <FadeComponent fadeTimer={2250}>
+              <div
+                className={`${showOverflow} skills-list-box p-4`}
+                onMouseEnter={onHover}
+                onMouseLeave={onLeaveHover}
+              >
+                <List listItems={technicalSkillsListItems} />
+              </div>
+            </FadeComponent>
           </Col>
           <Col>
             <Header
@@ -51,7 +52,9 @@ const TechnicalSkillsSection = () => {
               heading={3}
               verticalMargin={3}
             />
-            <List listItems={preferredPositionsList} />
+            <CollapseComponent collapseTimer={2500}>
+              <List listItems={preferredPositionsList} />
+            </CollapseComponent>
           </Col>
         </Row>
       </Col>
