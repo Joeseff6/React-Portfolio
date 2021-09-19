@@ -7,9 +7,20 @@ import FadeComponent from "./FadeComponent";
 import CollapseComponent from "./CollapseComponent";
 import List from "./List";
 import ImageCarousel from "./ImageCarousel";
+import { technicalSkillsListItems } from "../utils/listObjects";
 import { technicalImages } from "../utils/listObjects";
 
 const TechnicalSkillsSection = () => {
+  const [showOverflow, setShowOverflow] = useState("overflow-hidden");
+
+  const onHover = () => {
+    setShowOverflow("overflow-auto");
+  };
+
+  const onLeaveHover = () => {
+    setShowOverflow("overflow-hidden");
+  };
+
   return (
     <>
       <Col>
@@ -23,6 +34,13 @@ const TechnicalSkillsSection = () => {
               heading={3}
               verticalMargin={3}
             />
+            <div
+              className={`${showOverflow} skills-list-box p-4`}
+              onMouseEnter={onHover}
+              onMouseLeave={onLeaveHover}
+            >
+              <List listItems={technicalSkillsListItems} />
+            </div>
           </Col>
           <Col>
             <Header
