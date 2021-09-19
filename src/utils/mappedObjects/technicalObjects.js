@@ -1,4 +1,3 @@
-
 import HolyTrinity from "../../assets/images/HolyTrinity.png";
 import ReactLogo from "../../assets/images/ReactLogo.png";
 import MySQLLogo from "../../assets/images/MySQLLogo.png";
@@ -33,7 +32,7 @@ const technicalSkillsListItems = [
     itemText: "Javascript/HTML/CSS",
   },
   {
-    itemText: "Full Stack Web Development ",
+    itemText: "Full Stack Web Development",
   },
   {
     itemText: "React.js",
@@ -42,7 +41,7 @@ const technicalSkillsListItems = [
     itemText: "Node.js/Express",
   },
   {
-    itemText: "RESTful API",
+    itemText: "MERN Stack",
   },
   {
     itemText: "MySQL/Sequelize",
@@ -51,7 +50,10 @@ const technicalSkillsListItems = [
     itemText: "NoSQL/MongoDB",
   },
   {
-    itemText: "MERN Stack",
+    itemText: "Bootstrap",
+  },
+  {
+    itemText: "RESTful API",
   },
   {
     itemText: "Model-View-Controller",
@@ -61,7 +63,19 @@ const technicalSkillsListItems = [
   },
 ];
 
-export {
-  technicalImages,
-  technicalSkillsListItems
-}
+const preferredPositionsList = [
+  {
+    itemText: "React Developer",
+  },
+  {
+    itemText: "Full Stack Developer",
+  },
+  {
+    itemText: "Back End Developer",
+  },
+  {
+    itemText: "Software Engineer",
+  },
+];
+
+export { technicalImages, technicalSkillsListItems, preferredPositionsList };
