@@ -1,7 +1,6 @@
 import ListGroup from "react-bootstrap/ListGroup";
 
 const List = ({ listItems }) => {
-  console.log(listItems)
   return (
     <ListGroup className="text-center lh-sm">
       {listItems.map((listItem) => {
