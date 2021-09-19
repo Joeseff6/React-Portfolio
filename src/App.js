@@ -23,7 +23,7 @@ export default class App extends Component {
             <TechnicalSkillsSection />
           </Section>
         </FadeComponent>
-        <FadeComponent fadeTimer={2500}>
+        <FadeComponent fadeTimer={2750}>
           <Section fadeDirection="right">
             <ProjectsSection />
           </Section>
