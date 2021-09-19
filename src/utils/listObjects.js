@@ -6,7 +6,7 @@ import HolyTrinity from "../assets/images/HolyTrinity.png";
 import ReactLogo from "../assets/images/ReactLogo.png";
 import MySQLLogo from "../assets/images/MySQLLogo.png";
 import MongoDBLogo from "../assets/images/MongoDBLogo.png";
-import NodeJSLogo from "../assets/images/NodeJSLogo.png"
+import NodeJSLogo from "../assets/images/NodeJSLogo.png";
 import {
   Github,
   InboxFill,
@@ -83,4 +83,37 @@ const technicalImages = [
   },
 ];
 
-export { aboutMeImages, aboutMeListItems, technicalImages };
+const technicalSkillsListItems = [
+  {
+    itemText: "Javascript/HTML/CSS",
+  },
+  {
+    itemText: "Full Stack Web Development ",
+  },
+  {
+    itemText: "React.js",
+  },
+  {
+    itemText: "Node.js/Express",
+  },
+  {
+    itemText: "RESTful API",
+  },
+  {
+    itemText: "MySQL/Sequelize",
+  },
+  {
+    itemText: "NoSQL/MongoDB",
+  },
+  {
+    itemText: "MERN Stack",
+  },
+  {
+    itemText: "Model-View-Controller",
+  },
+  {
+    itemText: "Object Oriented Programming",
+  },
+];
+
+export { aboutMeImages, aboutMeListItems, technicalImages, technicalSkillsListItems };
