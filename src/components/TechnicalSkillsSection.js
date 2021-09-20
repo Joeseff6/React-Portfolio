@@ -36,7 +36,7 @@ const TechnicalSkillsSection = () => {
               heading={3}
               verticalMargin={3}
             />
-            <FadeComponent fadeTimer={2250}>
+            <FadeComponent fadeTimer={2000}>
               <div
                 className={`${showOverflow} skills-list-box p-4`}
                 onMouseEnter={onHover}
