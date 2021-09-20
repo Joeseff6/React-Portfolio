@@ -7,6 +7,7 @@ import AboutMeSection from "./components/AboutMeSection";
 import TechnicalSkillsSection from "./components/TechnicalSkillsSection";
 import ProjectsSection from "./components/ProjectsSection";
 import FadeComponent from "./components/FadeComponent";
+import Footer from "./components/Footer";
 
 export default class App extends Component {
   render() {
@@ -28,6 +29,7 @@ export default class App extends Component {
             <ProjectsSection />
           </Section>
         </FadeComponent>
+        <Footer />
       </Container>
     );
   }
