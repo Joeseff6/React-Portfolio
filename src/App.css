@@ -231,3 +231,28 @@ svg {
   height: 350px;
   border-radius: 5px;
 }
+
+.project-tile {
+  width: 200px;
+  height: 200px;
+  border-radius: 10px;
+}
+
+.btn-primary {
+  background: linear-gradient(
+    205deg,
+    rgba(84, 243, 244, 0.2) 0%,
+    rgba(90, 168, 244, 0.2) 33%,
+    rgba(90, 119, 244, 0.2) 66%,
+    rgba(255, 66, 19, 0.2) 100%
+  );
+}
+
+.footer {
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  height: 30px;
+  border: black 1px solid;
+  background-color: rgb(255, 255, 255, 0.9);
+}
