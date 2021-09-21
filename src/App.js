@@ -29,7 +29,9 @@ export default class App extends Component {
             <ProjectsSection />
           </Section>
         </FadeComponent>
-        <Footer />
+        <FadeComponent fadeTimer={3500}>
+          <Footer />
+        </FadeComponent>
       </Container>
     );
   }
