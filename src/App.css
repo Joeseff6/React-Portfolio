@@ -232,20 +232,15 @@ svg {
   border-radius: 5px;
 }
 
-.project-tile {
-  width: 200px;
-  height: 200px;
-  border-radius: 10px;
+.card-img {
+  border-top-left-radius: 15px;
+  border-top-right-radius: 15px;
 }
 
-.btn-primary {
-  background: linear-gradient(
-    205deg,
-    rgba(84, 243, 244, 0.2) 0%,
-    rgba(90, 168, 244, 0.2) 33%,
-    rgba(90, 119, 244, 0.2) 66%,
-    rgba(255, 66, 19, 0.2) 100%
-  );
+.card {
+  border-radius: 15px;
+  max-width: 350px;
+  height:350px
 }
 
 .footer {
@@ -257,11 +252,11 @@ svg {
   background-color: rgb(255, 255, 255, 0.9);
 }
 
-.card-img {
-  height: 150px;
-  border-radius: 10px;
-}
-
-.card {
-  border-radius: 10px;
+.project-section {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255, .9) 0%,
+    rgba(233, 233, 233, .1) 100%
+  );
 }
