@@ -31,7 +31,7 @@ const AboutMeSection = () => {
           </Row>
           <Row>
             <Col>
-              <Header title="My Bio" heading={2} verticalMargin={3} />
+              <Header title="My Bio" heading={2} bottomMargin={3} />
               <p
                 className={`fs-5 px-4 lh-base ${showOverflow} bio`}
                 onMouseEnter={onHover}
@@ -47,7 +47,7 @@ const AboutMeSection = () => {
               </p>
             </Col>
             <Col>
-              <Header title="Contact Me" heading={2} verticalMargin={3} />
+              <Header title="Contact Me" heading={2} bottomMargin={3} />
               <CollapseComponent collapseTimer={1250}>
                 <List listItems={aboutMeListItems} />
               </CollapseComponent>
