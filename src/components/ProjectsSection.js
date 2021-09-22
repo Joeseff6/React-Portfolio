@@ -8,7 +8,7 @@ import {
 } from "../utils/mappedObjects/projectsObjects";
 import Header from "./Header";
 import Button from "react-bootstrap/Button";
-import ProjectTiles from "./ProjectTiles";
+import ProjectCards from "./ProjectCards";
 
 const ProjectsSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -22,19 +22,16 @@ const ProjectsSection = () => {
   );
 
   return (
-    <>
-      <Col className="p-0" md={3}>
-        <ImageCarousel images={projectImages} />
-      </Col>
+    <Row className="my-5 project-section">
       <Col>
         <Row>
-          <Header title="My Projects" heading={1} />
+          <Header title="My Projects" heading={1}  bottomMargin={4}/>
         </Row>
-        <Row className="px-2" style={{ height: "298px" }}>
-          <ProjectTiles projects={currentProjects}/>
+        <Row className="justify-content-center mb-5">
+          <ProjectCards projects={currentProjects} />
         </Row>
       </Col>
-    </>
+    </Row>
   );
 };
 
