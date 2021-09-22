@@ -34,7 +34,7 @@ const TechnicalSkillsSection = () => {
             <Header
               title="My Technical Skills"
               heading={3}
-              verticalMargin={3}
+              bottomMargin={3}
             />
             <FadeComponent fadeTimer={2000}>
               <div
@@ -50,7 +50,7 @@ const TechnicalSkillsSection = () => {
             <Header
               title="Preferred Positions"
               heading={3}
-              verticalMargin={3}
+              bottomMargin={3}
             />
             <CollapseComponent collapseTimer={2500}>
               <List listItems={preferredPositionsList} />
