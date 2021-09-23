@@ -148,7 +148,8 @@ h1 {
 }
 
 p,
-span, .list-group-item {
+span,
+.list-group-item {
   font-family: "Libre Baskerville", serif;
 }
 
@@ -163,15 +164,18 @@ img {
 }
 
 /* Works on Chrome, Edge, and Safari */
-p::-webkit-scrollbar, .skills-list-box::-webkit-scrollbar {
+p::-webkit-scrollbar,
+.skills-list-box::-webkit-scrollbar {
   width: 10px;
 }
 
-p::-webkit-scrollbar-track, .skills-list-box::-webkit-scrollbar-track {
+p::-webkit-scrollbar-track,
+.skills-list-box::-webkit-scrollbar-track {
   background: rgb(0, 0, 0, 0);
 }
 
-p::-webkit-scrollbar-thumb, .skills-list-box::-webkit-scrollbar-thumb {
+p::-webkit-scrollbar-thumb,
+.skills-list-box::-webkit-scrollbar-thumb {
   background-color: rgb(255, 133, 102);
   border-radius: 5px;
   border: 3px solid rgb(255, 104, 66);
@@ -179,19 +183,11 @@ p::-webkit-scrollbar-thumb, .skills-list-box::-webkit-scrollbar-thumb {
 
 .indent {
   margin-left: 40px;
-}   
+}
 
-.bio, .skills-list-box {
+.bio,
+.skills-list-box {
   height: 200px;
-  background: linear-gradient(
-    205deg,
-    rgba(84, 243, 244, 0.2) 0%,
-    rgba(90, 168, 244, 0.2) 33%,
-    rgba(90, 119, 244, 0.2) 66%,
-    rgba(255, 66, 19, 0.2) 100%
-  );
-  border-radius: 10px;
-  border: rgb(49, 31, 27) 1px solid;
 }
 
 .list-group-item {
@@ -201,7 +197,7 @@ p::-webkit-scrollbar-thumb, .skills-list-box::-webkit-scrollbar-thumb {
 }
 
 a {
-  color:rgb(0, 0, 0);
+  color: rgb(0, 0, 0);
   font-weight: bolder;
 }
 
@@ -213,8 +209,8 @@ svg {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, .1) 0%,
-    rgba(233, 233, 233, .9) 100%
+    rgba(255, 255, 255, 0.1) 0%,
+    rgba(233, 233, 233, 0.9) 100%
   );
 }
 
@@ -222,12 +218,13 @@ svg {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     90deg,
-    rgba(255, 255, 255, .9) 0%,
-    rgba(233, 233, 233, .1) 100%
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(233, 233, 233, 0.1) 100%
   );
 }
 
-.section-fade-right, .section-fade-left {
+.section-fade-right,
+.section-fade-left {
   height: 350px;
   border-radius: 5px;
 }
@@ -239,8 +236,8 @@ svg {
 
 .card {
   border-radius: 15px;
-  max-width: 350px;
-  height:350px
+  max-width: 500px;
+  height: 400px;
 }
 
 .footer {
@@ -256,7 +253,32 @@ svg {
   background: rgb(255, 255, 255);
   background: linear-gradient(
     180deg,
-    rgba(255, 255, 255, .9) 0%,
-    rgba(233, 233, 233, .1) 100%
+    rgba(255, 255, 255, 0.9) 0%,
+    rgba(233, 233, 233, 0.1) 100%
   );
+}
+
+.project-tile-image {
+  max-width: 300px;
+  height: 200px;
+  border-radius: 15px;
+}
+
+.btn {
+  width: 250px;
+  font-weight: bolder;
+}
+
+.project-tile-row,
+.bio,
+.skills-list-box {
+  background: linear-gradient(
+    205deg,
+    rgba(84, 243, 244, 0.2) 0%,
+    rgba(90, 168, 244, 0.2) 33%,
+    rgba(90, 119, 244, 0.2) 66%,
+    rgba(255, 66, 19, 0.2) 100%
+  );
+  border-radius: 10px;
+  border: rgb(49, 31, 27) 1px solid;
 }
