@@ -21,8 +21,24 @@ const ProjectsSection = () => {
   );
   const numberOfPages = Math.ceil(projects.length / projectsPerPage);
 
-  const changeCurrentPage = (pageNumber) => {
+  const paginationPageChange = (pageNumber) => {
     setCurrentPage(pageNumber);
+  };
+
+  const buttonPageChange = (e) => {
+    console.log(e.target.dataset)
+    if (
+      (e.target.dataset.direction === "left" && currentPage === 1) ||
+      (e.target.dataset.direction === "right" && currentPage === numberOfPages)
+    ) {
+      return;
+    }
+    if (e.target.dataset.direction === "left") {
+      setCurrentPage(currentPage - 1);
+    } else {
+      setCurrentPage(currentPage + 1);
+    }
+    
   };
 
   return (
@@ -35,20 +51,24 @@ const ProjectsSection = () => {
           <Col>
             <Row className="mb-3">
               <Col className="d-flex justify-content-end">
-                <Button className="paginationButton">
-                  <CaretLeftFill />
+                <Button className="paginationButton" data-direction="left" onClick={buttonPageChange}>
+                  <span data-direction="left">Previous</span>
                 </Button>
               </Col>
-              <Col className="d-flex align-items-center justify-content-center" xs={2}>
+              <Col
+                className="d-flex align-items-center justify-content-center"
+                xs={2}
+              >
                 <TilePagination
                   numberOfPages={numberOfPages}
-                  handleClick={changeCurrentPage}
+                  handleClick={paginationPageChange}
+                  currentPage={currentPage}
                   className="random"
                 />
               </Col>
               <Col className="d-flex justify-content-start">
-                <Button className="paginationButton">
-                  <CaretRightFill />
+                <Button className="paginationButton" data-direction="right" onClick={buttonPageChange}>
+                <span data-direction="right">Next</span>
                 </Button>
               </Col>
             </Row>
