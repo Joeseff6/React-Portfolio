@@ -11,8 +11,8 @@ import TilePagination from "./TilePagination";
 
 const ProjectsSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
-  const [projectsPerPage, setProjectsPerPage] = useState(3);
 
+  const projectsPerPage = 3;
   const indexOfLastProject = currentPage * projectsPerPage;
   const indexOfFirstProject = indexOfLastProject - projectsPerPage;
   const currentProjects = projects.slice(
