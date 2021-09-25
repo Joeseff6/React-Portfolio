@@ -6,9 +6,15 @@ const List = ({ listItems }) => {
       {listItems.map((listItem) => {
         return (
           <ListGroup.Item key={listItem.itemText}>
-            {listItem.icon ? <listItem.icon size={24} /> : ""}
+            {listItem.icon ? (
+              <listItem.icon size={24} className="list-icon" />
+            ) : (
+              ""
+            )}
             {listItem.itemText}
-            <a href={listItem.link} target="_blank" rel="noreferrer">{listItem.linkText}</a>
+            <a href={listItem.link} target="_blank" rel="noreferrer">
+              {listItem.linkText}
+            </a>
           </ListGroup.Item>
         );
       })}
