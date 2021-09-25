@@ -209,7 +209,7 @@ a {
   font-weight: bolder;
 }
 
-svg {
+.list-icon {
   margin-right: 15px;
 }
 
@@ -297,4 +297,9 @@ svg {
   );
   border-radius: 10px;
   border: rgb(49, 31, 27) 1px solid;
+}
+
+.paginationButton {
+  width: 50px;
+  height: 100%;
 }
