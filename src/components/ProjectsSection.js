@@ -1,15 +1,13 @@
 import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import ImageCarousel from "./ImageCarousel";
 import {
-  projectImages,
   projects,
 } from "../utils/mappedObjects/projectsObjects";
 import Header from "./Header";
-import Button from "react-bootstrap/Button";
 import ProjectCards from "./ProjectCards";
 import ProjectTiles from "./ProjectTiles";
+import TilePagination from "./TilePagination";
 
 const ProjectsSection = () => {
   const [currentPage, setCurrentPage] = useState(1);
@@ -21,6 +19,7 @@ const ProjectsSection = () => {
     indexOfFirstProject,
     indexOfLastProject
   );
+  const numberOfPages = Math.ceil(projects.length / projectsPerPage);
 
   return (
     <Row className="my-5 project-section">
@@ -31,6 +30,7 @@ const ProjectsSection = () => {
         <Row className="justify-content-center mb-5 py-4 project-tile-row" >
           <ProjectTiles projects={currentProjects} />
           {/* <ProjectCards projects={currentProjects} /> */}
+          <TilePagination numberOfPages={numberOfPages} />
         </Row>
       </Col>
     </Row>
