@@ -1,9 +1,7 @@
 import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
-import {
-  projects,
-} from "../utils/mappedObjects/projectsObjects";
+import { projects } from "../utils/mappedObjects/projectsObjects";
 import Header from "./Header";
 import ProjectCards from "./ProjectCards";
 import ProjectTiles from "./ProjectTiles";
@@ -21,16 +19,20 @@ const ProjectsSection = () => {
   );
   const numberOfPages = Math.ceil(projects.length / projectsPerPage);
 
+  const changeCurrentPage = (pageNumber) => {
+    setCurrentPage(pageNumber);
+  }
+
   return (
     <Row className="my-5 project-section">
       <Col>
         <Row>
           <Header title="My Projects" heading={1} bottomMargin={4} />
         </Row>
-        <Row className="justify-content-center mb-5 py-4 project-tile-row" >
+        <Row className="justify-content-center mb-5 py-4 project-tile-row">
+          <TilePagination numberOfPages={numberOfPages} handleClick={changeCurrentPage}/>
           <ProjectTiles projects={currentProjects} />
           {/* <ProjectCards projects={currentProjects} /> */}
-          <TilePagination numberOfPages={numberOfPages} />
         </Row>
       </Col>
     </Row>
