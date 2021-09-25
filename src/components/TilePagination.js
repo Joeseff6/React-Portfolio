@@ -36,7 +36,7 @@ class TilePagination extends React.Component {
 
   render() {
     return (
-      <Pagination>
+      <Pagination className="justify-content-center mb-4">
         {this.state.items}
       </Pagination>
     )
