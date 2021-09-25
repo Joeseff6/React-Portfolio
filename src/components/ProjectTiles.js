@@ -7,7 +7,7 @@ const ProjectTiles = ({ projects }) => {
     <>
       {projects.map((project) => {
         return (
-          <Col>
+          <Col key={project.title}>
             <img
               src={project.image}
               alt={project.alt}
