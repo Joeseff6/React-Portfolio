@@ -1,11 +1,16 @@
 import Row from "react-bootstrap/Row";
+import Resume from "../assets/files/JosephSoriaResume.pdf";
 
 const Footer = () => {
   return (
     <Row className="footer align-items-center">
-      <span className="text-center" style={{fontWeight: "bolder"}}>
+      <span className="text-center" style={{ fontWeight: "bolder" }}>
         Have an opportunity for me? Email me at{" "}
         <a href="mailto: josephsoria6@gmail.com">josephsoria6@gmail.com</a>!
+        Download my resume{" "}
+        <a href={Resume} target="_blank" rel="noreferrer">
+          here.
+        </a>
       </span>
     </Row>
   );
