@@ -7,7 +7,7 @@ const ProjectCard = ({ project, handleClick }) => {
     <Col className="d-flex align-items-center justify-content-center mb-2">
       <Card className="mx-4">
         <CloseButton onClick={handleClick}/>
-        <p className="fs-1 text-center my-3">{project.title}</p>
+        <p className="fs-1 text-center my-3" id={project.id}>{project.title}</p>
         <p className="text-center mb-2">
           Github Repo:{" "}
           <a href={project.repoLink} target="_blank" rel="noreferrer">
