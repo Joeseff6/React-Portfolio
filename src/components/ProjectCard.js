@@ -2,11 +2,11 @@ import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import CloseButton from "react-bootstrap/CloseButton";
 
-const ProjectCard = ({ project }) => {
+const ProjectCard = ({ project, handleClick }) => {
   return (
     <Col className="d-flex align-items-center justify-content-center mb-2">
       <Card className="mx-4">
-        <CloseButton />
+        <CloseButton onClick={handleClick}/>
         <p className="fs-1 text-center my-3">{project.title}</p>
         <p className="text-center mb-2">
           Github Repo:{" "}
