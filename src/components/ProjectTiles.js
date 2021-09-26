@@ -13,7 +13,7 @@ const ProjectTiles = ({ projects, handleClick }) => {
               alt={project.alt}
               className="project-tile-image d-block mx-auto"
             />
-            <Button className="mt-1 d-block mx-auto" data-id={project.id} onClick={(e) => handleClick(e.target.dataset.id)}>
+            <Button href={`#${project.id}`} className="mt-1 d-block mx-auto" data-id={project.id} onClick={(e) => handleClick(e.target.dataset.id)}>
               <span data-id={project.id}>{project.title}</span>
             </Button>
           </Col>
