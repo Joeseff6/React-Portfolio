@@ -243,6 +243,7 @@ a {
 
 .card {
   border-radius: 15px;
+  position: relative;
 }
 
 .footer {
@@ -299,4 +300,13 @@ a {
 .paginationButton {
   width: 100px;
   height: 100%;
+}
+
+.btn-close {
+  position: absolute;
+  right: 20px;
+  top: 20px;
+  width: 30px;
+  height:20px;
+  background-color: red;
 }
