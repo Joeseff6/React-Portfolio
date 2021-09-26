@@ -7,7 +7,7 @@ const ImageCarousel = ({ images }) => {
     {images.map((image) => {
       return (
         <Carousel.Item key={image.alt}>
-          <img src={image.image} alt={image.alt} className={"w-100"} />
+          <img src={image.image} alt={image.alt} className="w-100 carouselImage" />
         </Carousel.Item>
       );
     })}
