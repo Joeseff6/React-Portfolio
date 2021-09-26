@@ -8,6 +8,7 @@ import GoogleBooks from "../../assets/images/GoogleBooks.JPG";
 
 const projects = [
   {
+    id: 0,
     image: StayRnb,
     alt: "A screenshot of the homepage for my Stay R n b app.",
     title: "Stay RnB",
@@ -16,6 +17,7 @@ const projects = [
     deployedLink: "https://stay-rnb-server.herokuapp.com/",
   },
   {
+    id: 1,
     image: SongNSeek,
     alt: "A screenshot of the homepage for my Song N Seek app.",
     title: "Song N' Seek",
@@ -24,6 +26,7 @@ const projects = [
     deployedLink: "Link where project is deployed",
   },
   {
+    id: 2,
     image: Suitcase,
     alt: "A screenshot of the homepage for my Suitcase app.",
     title: "Suitcase",
@@ -32,6 +35,7 @@ const projects = [
     deployedLink: "Link where project is deployed",
   },
   {
+    id: 3,
     image: TechBlog,
     alt: "A screenshot of the posts page for my Tech Blog app.",
     title: "Tech Blog",
@@ -40,6 +44,7 @@ const projects = [
     deployedLink: "Link where project is deployed",
   },
   {
+    id: 4,
     image: GoogleBooks,
     alt: "A screenshot of the posts page for my Tech Blog app.",
     title: "Google Books",
@@ -48,6 +53,7 @@ const projects = [
     deployedLink: "Link where project is deployed",
   },
   {
+    id: 5,
     image: WeatherCentral,
     alt: "A screenshot of the posts page for my Tech Blog app.",
     title: "Weather Central",
@@ -56,6 +62,7 @@ const projects = [
     deployedLink: "Link where project is deployed",
   },
   {
+    id: 6,
     image: FullStackQuiz,
     alt: "A screenshot of the posts page for my Tech Blog app.",
     title: "Full Stack Quiz",
