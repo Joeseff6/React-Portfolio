@@ -26,7 +26,6 @@ const ProjectsSection = () => {
   };
 
   const buttonPageChange = (e) => {
-    console.log(e.target.dataset)
     if (
       (e.target.dataset.direction === "left" && currentPage === 1) ||
       (e.target.dataset.direction === "right" && currentPage === numberOfPages)
@@ -63,7 +62,6 @@ const ProjectsSection = () => {
                   numberOfPages={numberOfPages}
                   handleClick={paginationPageChange}
                   currentPage={currentPage}
-                  className="random"
                 />
               </Col>
               <Col className="d-flex justify-content-start">
