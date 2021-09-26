@@ -46,6 +46,10 @@ const ProjectsSection = () => {
     setShow(true);
   }
 
+  const handleCloseButton = () => {
+    setShow(false);
+  }
+
   return (
     <Row className="my-5 project-section">
       <Col>
@@ -81,7 +85,7 @@ const ProjectsSection = () => {
             </Row>
           </Col>
         </Row>
-        {show && <ProjectCard project={project} />}
+        {show && <ProjectCard project={project} handleClick={handleCloseButton}/>}
       </Col>
     </Row>
   );
