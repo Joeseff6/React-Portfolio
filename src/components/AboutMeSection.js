@@ -21,7 +21,7 @@ const AboutMeSection = () => {
 
   return (
     <>
-      <Col className="p-0" md={3}>
+      <Col className="p-0" md={3} id="about-me">
         <ImageCarousel images={aboutMeImages} />
       </Col>
       <Col>
