@@ -1,15 +1,28 @@
 import React from "react";
-import Navbar from "react-bootstrap/Navbar";
+import Nav from "react-bootstrap/Nav";
+import Resume from "../assets/files/JosephSoriaResume.pdf"
 
-class Nav extends React.Component {
-  state = {};
-
+class Navbar extends React.Component {
   render() {
     return (
-      <Navbar bg="light" expand="md" fixed="top" >
-      </Navbar>
-    )
+      <Nav
+        activeKey="/home"
+      >
+        <Nav.Item>
+          <Nav.Link href="#about-me">About Me</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#skills">Skills</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href="#projects">Projects</Nav.Link>
+        </Nav.Item>
+        <Nav.Item>
+          <Nav.Link href={Resume} target="_blank" rel="noreferrer">My Resume</Nav.Link>
+        </Nav.Item>
+      </Nav>
+    );
   }
 }
 
-export default Nav;
+export default Navbar;
