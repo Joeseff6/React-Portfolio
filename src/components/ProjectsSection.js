@@ -9,9 +9,9 @@ import TilePagination from "./TilePagination";
 import Button from "react-bootstrap/Button";
 
 const ProjectsSection = () => {
-  const [ currentPage, setCurrentPage ] = useState(1);
-  const [ project, setProject ] = useState(projects[0]);
-  const [ show, setShow ] = useState(false);
+  const [currentPage, setCurrentPage] = useState(1);
+  const [project, setProject] = useState(projects[0]);
+  const [show, setShow] = useState(false);
 
   const projectsPerPage = 3;
   const indexOfLastProject = currentPage * projectsPerPage;
@@ -38,20 +38,19 @@ const ProjectsSection = () => {
     } else {
       setCurrentPage(currentPage + 1);
     }
-    
   };
 
   const handleProjectSelection = (id) => {
     setProject(projects[id]);
     setShow(true);
-  }
+  };
 
   const handleCloseButton = () => {
     setShow(false);
-  }
+  };
 
   return (
-    <Row className="my-5 project-section">
+    <Row className="my-5 project-section" id="projects">
       <Col>
         <Row>
           <Header title="My Projects" heading={1} bottomMargin={4} />
@@ -60,7 +59,12 @@ const ProjectsSection = () => {
           <Col>
             <Row className="mb-3">
               <Col className="d-flex justify-content-end">
-                <Button className="paginationButton" data-direction="left" onClick={handleButtonPageChange}>
+                <Button
+                  className="paginationButton"
+                  data-direction="left"
+                  onClick={handleButtonPageChange}
+                  variant=""
+                >
                   <span data-direction="left">Previous</span>
                 </Button>
               </Col>
@@ -75,17 +79,27 @@ const ProjectsSection = () => {
                 />
               </Col>
               <Col className="d-flex justify-content-start">
-                <Button className="paginationButton" data-direction="right" onClick={handleButtonPageChange }>
-                <span data-direction="right">Next</span>
+                <Button
+                  className="paginationButton"
+                  data-direction="right"
+                  onClick={handleButtonPageChange}
+                  variant=""
+                >
+                  <span data-direction="right">Next</span>
                 </Button>
               </Col>
             </Row>
             <Row>
-              <ProjectTiles projects={currentProjects} handleClick={handleProjectSelection}/>
+              <ProjectTiles
+                projects={currentProjects}
+                handleClick={handleProjectSelection}
+              />
             </Row>
           </Col>
         </Row>
-        {show && <ProjectCard project={project} handleClick={handleCloseButton}/>}
+        {show && (
+          <ProjectCard project={project} handleClick={handleCloseButton} />
+        )}
       </Col>
     </Row>
   );
