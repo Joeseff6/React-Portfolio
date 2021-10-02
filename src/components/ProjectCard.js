@@ -20,7 +20,7 @@ const ProjectCard = ({ project, handleClick }) => {
             {project.deployedLink}
           </a>
         </p>
-        <p className="text-center my-2">Skills used: {project.skills}</p>
+        <p className="text-center mb-2">Skills used: {project.skills}</p>
         <Card.Img src={project.image} alt={project.alt} />
         <p className="my-3 px-4">{project.description}</p>
       </Card>
