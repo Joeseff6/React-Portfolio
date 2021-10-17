@@ -170,9 +170,9 @@ p::-webkit-scrollbar-track,
 
 p::-webkit-scrollbar-thumb,
 .skills-list-box::-webkit-scrollbar-thumb {
-  background-color: rgb(255, 133, 102);
+  background-color: #0B0B0A;
   border-radius: 5px;
-  border: 4px solid rgb(255, 104, 66);
+  border: 2px solid white;
 }
 
 .indent {
@@ -192,6 +192,7 @@ p::-webkit-scrollbar-thumb,
 
 a, .nav-link {
   font-weight: bolder;
+  color: white;
 }
 
 .list-icon {
@@ -222,14 +223,9 @@ a, .nav-link {
 }
 
 .card, .list-group-item {
-  background: rgb(84, 243, 244);
-  background: linear-gradient(
-    295deg,
-    rgba(84, 243, 244, 0.85) 0%,
-    rgb(246, 255, 255) 33%,
-    rgb(246, 255, 255) 66%,
-    rgba(255, 66, 19, 0.85) 100%
-  );
+  background-color: #2B2B27;
+  color: white;
+  border: white 2px dashed;
 }
 
 .footer {
@@ -261,7 +257,11 @@ a, .nav-link {
   border: black 2px solid;
 }
 
-.page-link, .page-link:hover {
+a:hover, .nav-link:hover {
+  color: #C4C4C0;
+}
+
+.page-link {
   color: black;
 }
 
@@ -288,7 +288,7 @@ a, .nav-link {
   top: 20px;
   width: 30px;
   height:20px;
-  background-color: red;
+  background-color: white;
 }
 
 .nav-row {
@@ -302,4 +302,8 @@ a, .nav-link {
 
 .nav-link {
   color: white;
+}
+
+button:hover{
+  border: 2px solid #C4C4C0;
 }
