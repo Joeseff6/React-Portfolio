@@ -7,7 +7,7 @@ class Navbar extends React.Component {
     return (
       <Nav activeKey="/home">
         <Nav.Item>
-          <Nav.Link href="#" className="navbar-brand">Joseph Soria</Nav.Link>
+          <Nav.Link href="#about-me" className="navbar-brand">Joseph Soria</Nav.Link>
         </Nav.Item>
         <Nav.Item>
           <Nav.Link href="#about-me">About Me</Nav.Link>
