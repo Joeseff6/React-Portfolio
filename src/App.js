@@ -18,12 +18,12 @@ export default class App extends Component {
           <Nav />
         </Row>
         <FadeComponent fadeTimer={500}>
-          <Section fadeDirection="right">
+          <Section>
             <AboutMeSection />
           </Section>
         </FadeComponent>
         <FadeComponent fadeTimer={1500}>
-          <Section fadeDirection="left">
+          <Section>
             <TechnicalSkillsSection />
           </Section>
         </FadeComponent>
