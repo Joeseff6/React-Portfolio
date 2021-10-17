@@ -132,14 +132,7 @@ table {
 /* ----------------------------------------------- */
 
 body {
-  background: rgb(84, 243, 244);
-  background: linear-gradient(
-    205deg,
-    rgba(84, 243, 244, 1) 0%,
-    rgba(90, 168, 244, 1) 33%,
-    rgba(90, 119, 244, 1) 66%,
-    rgba(255, 66, 19, 1) 100%
-  );
+  background-color: #65655E;
   height: 100%;
 }
 
@@ -149,7 +142,8 @@ h1 {
 
 p,
 span,
-.list-group-item {
+.list-group-item,
+.nav-link {
   font-family: "Libre Baskerville", serif;
 }
 
@@ -194,6 +188,40 @@ p::-webkit-scrollbar-thumb,
   margin-bottom: 10px;
   border-radius: 2px;
   border: rgb(49, 31, 27) 1px solid;
+}
+
+a, .nav-link {
+  font-weight: bolder;
+}
+
+.list-icon {
+  margin-right: 15px;
+}
+
+.section-row, .project-section {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255) 0%,
+    rgba(233, 233, 233, 0) 100%
+  );
+}
+
+.carouselImage {
+  height: 350px;
+}
+
+.section-row {
+  height: 350px;
+  border-radius: 5px;
+}
+
+.card {
+  border-radius: 15px;
+  position: relative;
+}
+
+.card, .list-group-item {
   background: rgb(84, 243, 244);
   background: linear-gradient(
     295deg,
@@ -202,48 +230,6 @@ p::-webkit-scrollbar-thumb,
     rgb(246, 255, 255) 66%,
     rgba(255, 66, 19, 0.85) 100%
   );
-}
-
-a {
-  color: rgb(0, 0, 0);
-  font-weight: bolder;
-}
-
-.list-icon {
-  margin-right: 15px;
-}
-
-.section-fade-left {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.1) 0%,
-    rgba(233, 233, 233, 0.9) 100%
-  );
-}
-
-.section-fade-right {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    90deg,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(233, 233, 233, 0.1) 100%
-  );
-}
-
-.carouselImage {
-  height: 350px;
-}
-
-.section-fade-right,
-.section-fade-left {
-  height: 350px;
-  border-radius: 5px;
-}
-
-.card {
-  border-radius: 15px;
-  position: relative;
 }
 
 .footer {
@@ -255,15 +241,6 @@ a {
   background-color: rgb(255, 255, 255, 0.9);
 }
 
-.project-section {
-  background: rgb(255, 255, 255);
-  background: linear-gradient(
-    180deg,
-    rgba(255, 255, 255, 0.9) 0%,
-    rgba(233, 233, 233, 0.1) 100%
-  );
-}
-
 .project-tile-image {
   max-width: 300px;
   height: 200px;
@@ -273,9 +250,19 @@ a {
 .btn {
   width: 250px;
   font-weight: bolder;
-  background-color: white;
   color: black;
   border: black 2px solid;
+  background-color: white;
+}
+
+.page-item.active .page-link {
+  background-color: black;
+  color: white;
+  border: black 2px solid;
+}
+
+.page-link, .page-link:hover {
+  color: black;
 }
 
 .btn:hover {
@@ -286,15 +273,8 @@ a {
 .project-tile-row,
 .bio,
 .skills-list-box {
-  background: linear-gradient(
-    205deg,
-    rgba(84, 243, 244, 0.2) 0%,
-    rgba(90, 168, 244, 0.2) 33%,
-    rgba(90, 119, 244, 0.2) 66%,
-    rgba(255, 66, 19, 0.2) 100%
-  );
+
   border-radius: 10px;
-  border: rgb(49, 31, 27) 1px solid;
 }
 
 .paginationButton {
@@ -309,4 +289,17 @@ a {
   width: 30px;
   height:20px;
   background-color: red;
+}
+
+.nav-row {
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: #0B0B0A;
+}
+
+.nav-link {
+  color: white;
 }
