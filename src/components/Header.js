@@ -1,6 +1,6 @@
-const Header = ({ title, heading, bottomMargin }) => {
+const Header = ({ title, heading, bottomMargin, id }) => {
   return (
-    <h1 className={`mb-${bottomMargin} my-2 fs-${heading} text-center`}>
+    <h1 className={`mb-${bottomMargin} my-2 fs-${heading} text-center`} id={id}>
       {title}
     </h1>
   );
