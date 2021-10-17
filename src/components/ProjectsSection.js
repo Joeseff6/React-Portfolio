@@ -50,10 +50,10 @@ const ProjectsSection = () => {
   };
 
   return (
-    <Row className="my-5 project-section" id="projects">
+    <Row className="my-5 project-section">
       <Col>
         <Row>
-          <Header title="My Projects" heading={1} bottomMargin={4} />
+          <Header title="My Projects" heading={1} bottomMargin={4} id="projects"/>
         </Row>
         <Row className="justify-content-center mb-4 py-4 project-tile-row">
           <Col>

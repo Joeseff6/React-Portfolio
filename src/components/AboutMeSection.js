@@ -21,13 +21,13 @@ const AboutMeSection = () => {
 
   return (
     <>
-      <Col className="p-0" md={3} id="about-me">
+      <Col className="p-0" md={3}>
         <ImageCarousel images={aboutMeImages} />
       </Col>
       <Col>
         <FadeComponent fadeTimer={750}>
           <Row>
-            <Header title="Who Am I?" />
+            <Header title="Who Am I?" id="about-me"/>
           </Row>
           <Row>
             <Col>

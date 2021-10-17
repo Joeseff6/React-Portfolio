@@ -25,9 +25,9 @@ const TechnicalSkillsSection = () => {
 
   return (
     <>
-      <Col id="skills">
+      <Col>
         <Row>
-          <Header title="Technical Skills" />
+          <Header title="Technical Skills" id="skills"/>
         </Row>
         <Row>
           <Col>
