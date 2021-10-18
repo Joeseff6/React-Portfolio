@@ -6,7 +6,7 @@ const Footer = () => {
     <Row className="footer align-items-center">
       <span className="text-center" style={{ fontWeight: "bolder" }}>
         Have an opportunity for me? Email me at{" "}
-        <a href="mailto: josephsoria6@gmail.com">josephsoria6@gmail.com</a>
+        <a href="mailto: josephsoria6@gmail.com" className="footer-link">josephsoria6@gmail.com</a>
         ,{" "}or download my resume{" "}
         <a href={Resume} target="_blank" rel="noreferrer">
           here.

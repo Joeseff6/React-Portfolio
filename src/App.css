@@ -304,6 +304,10 @@ a:hover, .nav-link:hover {
   color: white;
 }
 
-button:hover{
+button:hover, .btn:hover{
   border: 2px solid #C4C4C0;
+}
+
+.footer-link {
+  color: black;
 }
