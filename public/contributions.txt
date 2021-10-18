@@ -1,0 +1,14 @@
+Javascript/HTML/CSS logo
+<a href="https://www.freepnglogos.com/pics/javascript">Javascript from freepnglogos.com</a>
+
+React logo
+https://www.iconfinder.com/icons/7423887/react_react_native_icon
+
+MySQL logo
+<a href="https://www.freepnglogos.com/pics/logo-mysql">Logo Mysql from freepnglogos.com</a>
+
+MongoDB logo
+https://www.iconfinder.com/icons/1012822/code_development_logo_mongodb_programming_icon
+
+Node.JS logo
+https://www.iconfinder.com/icons/4375378/js_logo_node_icon

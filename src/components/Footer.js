@@ -1,12 +1,19 @@
-function Footer() {
+import Row from "react-bootstrap/Row";
+import Resume from "../assets/files/JosephSoriaResume.pdf";
+
+const Footer = () => {
   return (
-    <div className="footer">
-      <span>
-        Powered by the powerful React Library!
-        For inquiries, contact me at <a href="mailto:josephsoria6@gmail.com"> josephsoria6@gmail.com</a>.
+    <Row className="footer align-items-center">
+      <span className="text-center" style={{ fontWeight: "bolder" }}>
+        Have an opportunity for me? Email me at{" "}
+        <a href="mailto: josephsoria6@gmail.com" className="footer-link">josephsoria6@gmail.com</a>
+        ,{" "}or download my resume{" "}
+        <a href={Resume} target="_blank" rel="noreferrer">
+          here.
+        </a>
       </span>
-    </div>
-  )
-}
+    </Row>
+  );
+};
 
 export default Footer;

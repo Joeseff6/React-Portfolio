@@ -1,27 +1,39 @@
-import React from 'react';
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
-import Main from '../src/layouts/Main';
-import Home from './pages/Home';
-import Projects from './pages/Projects';
-import Portfolio from './pages/Portfolio';
-import Contact from './pages/Contact';
-import './styles/App.css'
+import React, { Component } from "react";
+import "./App.css";
+import Container from "react-bootstrap/Container";
+import Section from "./components/Section";
+import Nav from "./components/Nav";
+import AboutMeSection from "./components/AboutMeSection";
+import TechnicalSkillsSection from "./components/TechnicalSkillsSection";
+import ProjectsSection from "./components/ProjectsSection";
+import FadeComponent from "./components/FadeComponent";
+import Footer from "./components/Footer";
+import Row from "react-bootstrap/Row";
 
-
-function App() {
-  return (
-    <BrowserRouter>
-      <Routes>
-        <Route element={<Main />}>
-          <Route path="/" element={<Home />} />
-          <Route path="/projects" element={<Projects />} />
-          <Route path="/portfolio" element={<Portfolio />} />
-          <Route path="/contact" element={<Contact />} />
-        </Route>
-      </Routes>
-    </BrowserRouter>
-  );
+export default class App extends Component {
+  render() {
+    return (
+      <Container fluid>
+        <Row className="nav-row align-items-center">
+          <Nav />
+        </Row>
+        <FadeComponent fadeTimer={500}>
+          <Section>
+            <AboutMeSection />
+          </Section>
+        </FadeComponent>
+        <FadeComponent fadeTimer={1500}>
+          <Section>
+            <TechnicalSkillsSection />
+          </Section>
+        </FadeComponent>
+        <FadeComponent fadeTimer={2750}>
+          <ProjectsSection />
+        </FadeComponent>
+        <FadeComponent fadeTimer={3500}>
+          <Footer />
+        </FadeComponent>
+      </Container>
+    );
+  }
 }
-
-
-export default App;
