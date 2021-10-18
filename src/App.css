@@ -151,13 +151,11 @@ img {
   height: 400px;
 }
 
-/* Works on Firefox */
 * {
   scrollbar-width: thin;
   scrollbar-color: rgb(0, 0, 0, 0) rgb(255, 104, 66);
 }
 
-/* Works on Chrome, Edge, and Safari */
 p::-webkit-scrollbar,
 .skills-list-box::-webkit-scrollbar {
   width: 10px;
@@ -181,7 +179,8 @@ p::-webkit-scrollbar-thumb,
 
 .bio,
 .skills-list-box {
-  height: 200px;
+  height: 225px;
+  scrollbar-gutter: stable;
 }
 
 .list-group-item {
