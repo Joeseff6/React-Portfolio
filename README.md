@@ -28,8 +28,6 @@ I used function components to build this portfolio, which was helpful in terms o
 
 ## Screenshots
 
-![The about me page of my portfolio](./public/assets/Capture1.JPG)
+![The homepage of my portfolio](./public/assets/images/Capture1.JPG)
 
-![The projects page of my portfolio](./public/assets/Capture2.JPG)
-
-![The contact page of my portfolio](./public/assets/Capture3.JPG)
+![A project displayed after being selected](./public/assets/images/Capture2.JPG)
