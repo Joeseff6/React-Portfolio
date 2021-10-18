@@ -220,6 +220,7 @@ a, .nav-link {
 .card {
   border-radius: 15px;
   position: relative;
+  max-width: 950px;
 }
 
 .card, .list-group-item {
