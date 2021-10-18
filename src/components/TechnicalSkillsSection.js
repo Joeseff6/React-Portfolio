@@ -38,7 +38,7 @@ const TechnicalSkillsSection = () => {
             />
             <FadeComponent fadeTimer={2000}>
               <div
-                className={`${showOverflow} skills-list-box p-4`}
+                className={`${showOverflow} skills-list-box px-4`}
                 onMouseEnter={onHover}
                 onMouseLeave={onLeaveHover}
               >
