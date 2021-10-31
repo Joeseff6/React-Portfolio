@@ -1,3 +1,4 @@
+import "./ProjectCard.css";
 import Card from "react-bootstrap/Card";
 import Col from "react-bootstrap/Col";
 import CloseButton from "react-bootstrap/CloseButton";

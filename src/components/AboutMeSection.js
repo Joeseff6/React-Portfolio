@@ -1,3 +1,4 @@
+import "./AboutMeSection.css"
 import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -41,8 +42,7 @@ const AboutMeSection = () => {
                 I am a graduate from the University of Houston. I majored in
                 Mechanical Engineering, and have worked in the Oil and Gas
                 industry since 2011. I am currently developing my Full Stack
-                Engineering skills, with my main focus in Web Development using
-                React. My Hobbies include shooting pool, trading in the stock
+                Web Development skills, with my main focus in developing with React. My Hobbies include shooting pool, trading in the stock
                 market, and coding of course!
               </p>
             </Col>

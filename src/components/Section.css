@@ -1,0 +1,10 @@
+.section-row {
+  height: 350px;
+  border-radius: 5px;
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255) 0%,
+    rgba(233, 233, 233, 0) 100%
+  );
+}

@@ -1,0 +1,24 @@
+.project-tile-row {
+  border-radius: 10px;
+}
+
+.project-section {
+  background: rgb(255, 255, 255);
+  background: linear-gradient(
+    180deg,
+    rgba(255, 255, 255) 0%,
+    rgba(233, 233, 233, 0) 100%
+  );
+}
+
+.btn {
+  width: 250px;
+  font-weight: bolder;
+  color: black;
+  border: black 2px solid;
+  background-color: white;
+}
+.btn:hover {
+  border: 2px solid #c4c4c0;
+  color: black;
+}

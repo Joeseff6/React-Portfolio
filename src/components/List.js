@@ -1,3 +1,4 @@
+import "./List.css";
 import ListGroup from "react-bootstrap/ListGroup";
 
 const List = ({ listItems }) => {

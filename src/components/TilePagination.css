@@ -1,0 +1,14 @@
+.page-item.active .page-link {
+  background-color: black;
+  color: white;
+  border: black 2px solid;
+}
+
+.page-link {
+  color: black;
+}
+
+.paginationButton {
+  width: 100px;
+  height: 100%;
+}

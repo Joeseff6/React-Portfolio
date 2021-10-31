@@ -1,3 +1,4 @@
+import "./ProjectTiles.css";
 import Col from "react-bootstrap/Col";
 
 const ProjectTiles = ({ projects, handleClick }) => {

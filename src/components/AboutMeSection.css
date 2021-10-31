@@ -1,0 +1,8 @@
+.bio {
+  height: 225px;
+  scrollbar-gutter: stable;
+}
+
+.indent {
+  margin-left: 40px;
+}

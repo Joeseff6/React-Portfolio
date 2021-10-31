@@ -1,7 +1,7 @@
+import "./Nav.css";
+import Resume from "../assets/files/JosephSoriaResume.pdf";
 import React from "react";
 import Nav from "react-bootstrap/Nav";
-import Resume from "../assets/files/JosephSoriaResume.pdf";
-
 class Navbar extends React.Component {
   render() {
     return (

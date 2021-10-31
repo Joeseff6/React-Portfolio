@@ -1,3 +1,4 @@
+import "./ProjectsSection.css";
 import React, { useState } from "react";
 import Row from "react-bootstrap/Row";
 import Col from "react-bootstrap/Col";
@@ -53,7 +54,7 @@ const ProjectsSection = () => {
     <Row className="my-5 project-section">
       <Col>
         <Row>
-          <Header title="My Projects" heading={1} bottomMargin={4} id="projects"/>
+          <Header title="My Projects" heading={1} id="projects"/>
         </Row>
         <Row className="justify-content-center mb-4 py-4 project-tile-row">
           <Col>

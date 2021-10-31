@@ -1,0 +1,18 @@
+.nav-link {
+  font-family: "Libre Baskerville", serif;
+  font-weight: bolder;
+  color: white;
+}
+
+.nav-link:hover {
+  color: #c4c4c0;
+}
+
+.nav-row {
+  height: 40px;
+  position: fixed;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+  background-color: #0b0b0a;
+}

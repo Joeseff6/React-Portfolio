@@ -1,3 +1,4 @@
+import "./Footer.css";
 import Row from "react-bootstrap/Row";
 import Resume from "../assets/files/JosephSoriaResume.pdf";
 
@@ -8,7 +9,7 @@ const Footer = () => {
         Have an opportunity for me? Email me at{" "}
         <a href="mailto: josephsoria6@gmail.com" className="footer-link">josephsoria6@gmail.com</a>
         ,{" "}or download my resume{" "}
-        <a href={Resume} target="_blank" rel="noreferrer">
+        <a href={Resume} target="_blank" rel="noreferrer" className="footer-link">
           here.
         </a>
       </span>
