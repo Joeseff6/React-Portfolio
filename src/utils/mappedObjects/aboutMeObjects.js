@@ -1,7 +1,7 @@
-import ProfilePic from "../../assets/images/Profilepic.jpg";
-import GradPic from "../../assets/images/Gradpic.jpg";
-import CityPic from "../../assets/images/Citypic.jpg";
-import PoolPic from "../../assets/images/Poolpic.jpg";
+import ProfilePic from "../../assets/images/Profilepic.JPG";
+import GradPic from "../../assets/images/Gradpic.JPG";
+import CityPic from "../../assets/images/Citypic.JPG";
+import PoolPic from "../../assets/images/Poolpic.JPG";
 import {
   Github,
   InboxFill,
@@ -55,7 +55,4 @@ const aboutMeListItems = [
   },
 ];
 
-export {
-  aboutMeImages,
-  aboutMeListItems
-}
+export { aboutMeImages, aboutMeListItems };

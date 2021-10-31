@@ -9,7 +9,6 @@ import ProjectsSection from "./components/ProjectsSection";
 import FadeComponent from "./components/FadeComponent";
 import Footer from "./components/Footer";
 import Row from "react-bootstrap/Row";
-
 export default class App extends Component {
   render() {
     return (

@@ -1,8 +1,8 @@
-import HolyTrinity from "../../assets/images/HolyTrinity.png";
-import ReactLogo from "../../assets/images/ReactLogo.png";
-import MySQLLogo from "../../assets/images/MySQLLogo.png";
-import MongoDBLogo from "../../assets/images/MongoDBLogo.png";
-import NodeJSLogo from "../../assets/images/NodeJSLogo.png";
+import HolyTrinity from "../../assets/images/HolyTrinity.JPG";
+import ReactLogo from "../../assets/images/ReactLogo.JPG";
+import MySQLLogo from "../../assets/images/MySQLLogo.JPG";
+import MongoDBLogo from "../../assets/images/MongoDBLogo.JPG";
+import NodeJSLogo from "../../assets/images/NodeJSLogo.JPG";
 
 const technicalImages = [
   {

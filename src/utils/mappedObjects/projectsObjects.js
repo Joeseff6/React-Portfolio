@@ -1,12 +1,11 @@
 import StayRnb from "../../assets/images/StayRnb.JPG";
-import Suitcase from "../../assets/images/suitcase.PNG";
-import WeatherCentral from "../../assets/images/weatherCentral.PNG";
+import Suitcase from "../../assets/images/suitcase.JPG";
+import WeatherCentral from "../../assets/images/weatherCentral.JPG";
 import SongNSeek from "../../assets/images/SongNSeek.JPG";
-import TechBlog from "../../assets/images/TechBlog.PNG";
-import FullStackQuiz from "../../assets/images/fullStackQuiz.PNG";
+import TechBlog from "../../assets/images/TechBlog.JPG";
+import FullStackQuiz from "../../assets/images/fullStackQuiz.JPG";
 import GoogleBooks from "../../assets/images/GoogleBooks.JPG";
-import EmployeeTracker from "../../assets/images/EmployeeTracker.PNG";
-
+import EmployeeTracker from "../../assets/images/EmployeeTracker.JPG";
 
 const projects = [
   {
